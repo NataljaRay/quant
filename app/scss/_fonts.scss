@@ -1,0 +1,70 @@
+//fonts
+
+// Lato
+@font-face {
+  font-family: 'Lato-Light';
+  src: url('../fonts/Lato-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url('../fonts/Lato-Regular.ttf') format('truetype');
+}
+
+
+// FiraSans
+@font-face {
+  font-family: 'Firasanslight';
+  src:  local("Firasanslight"),
+        url('../fonts/Firasanslight.woff') format('woff'),
+        url('../fonts/Firasanslight.woff2') format('woff2'),
+        url('../fonts/Firasanslight.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Firasansregular';
+  src:  local("Firasansregular"),
+  url('../fonts/Firasansregular.woff') format('woff'),
+  url('../fonts/Firasansregular.woff2') format('woff2'),
+  url('../fonts/Firasansregular.ttf') format('truetype');
+}
+
+// FiraMono
+@font-face {
+  font-family: 'FiraMono-Regular';
+  src:  local("FiraMono-Regular"),
+  url('../fonts/FiraMono/FiraMono-Regular.woff') format('woff'),
+  url('../fonts/FiraMono/FiraMono-Regular.woff2') format('woff2'),
+  url('../fonts/FiraMono/FiraMono-Regular.eot') format('opentype'),
+  url('../fonts/FiraMono/FiraMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FiraMono-Medium';
+  src:  local("FiraMono-Medium"),
+  url('../fonts/FiraMono/FiraMono-Medium.woff') format('woff'),
+  url('../fonts/FiraMono/FiraMono-Medium.woff2') format('woff2'),
+  url('../fonts/FiraMono/FiraMono-Medium.eot') format('opentype'),
+  url('../fonts/FiraMono/FiraMono-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FiraMono-Bold';
+  src:  local("FiraMono-Bold"),
+  url('../fonts/FiraMono/FiraMono-Bold.woff') format('woff'),
+  url('../fonts/FiraMono/FiraMono-Bold.woff2') format('woff2'),
+  url('../fonts/FiraMono/FiraMono-Bold.eot') format('opentype'),
+  url('../fonts/FiraMono/FiraMono-Bold.ttf') format('truetype');
+}
+
+
+// Mont
+
+@font-face {
+  font-family: 'Mont-ExtraLight';
+  src:  local("Mont-ExtraLight"),
+  url('../fonts/Mont/Mont-ExtraLightDEMO.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Mont-Heavy';
+  src:  local("Mont-Heavy"),
+  url('../fonts/Mont/Mont-HeavyDEMO.otf') format('opentype');
+}

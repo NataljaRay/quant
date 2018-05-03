@@ -1,0 +1,38 @@
+.header{
+  background-color: #f1f1f1;
+  @include font($font-FiraMono-Regular, 14px, $text-color);
+  //height: 52px;
+  //box-sizing: border-box;
+  padding: 16px;
+  //position: absolute;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+
+  border-bottom: 1px solid #dadadb;
+
+  &-left,
+  &-right{
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+
+  &-right{
+    justify-content: flex-end;
+  }
+
+  .logo{
+    height: 55px;
+  }
+
+  .nav{
+    &-link{
+      margin-left: 24px;
+      padding: 0;
+      color: $text-color;
+    }
+  }
+
+
+}

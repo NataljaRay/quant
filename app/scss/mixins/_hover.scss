@@ -1,0 +1,5 @@
+@mixin hover($border-color, $font-color){
+  border: 1px solid $border-color;
+  color: $font-color;
+  cursor: pointer;
+}

@@ -1,0 +1,44 @@
+@import 'fonts';
+@import 'variables';
+
+@import "reset";
+@import "mixins";
+@import "extends";
+
+
+html, body{
+
+}
+
+body{
+  //max-width: 1280px;
+
+  @include font($font-FiraMono-Regular, 14px, $text-color);
+  *:before,
+  *:after{
+    //display: none;
+  }
+  &.is-open-modal {
+    overflow: hidden;
+  }
+}
+.main-layout{
+  .container{
+    //max-width: 1170px;
+    //padding: 0 15px;
+    //margin: auto;
+    //text-align: center;
+    &--flex{
+      @include flex(space-between);
+    }
+  }
+  @import "header";
+  @import "section";
+  @import "footer";
+  @import "components/modal";
+  @import "components/button";
+  @import "components/contact-us";
+  @import "components/slider";
+  @import "media";
+
+}

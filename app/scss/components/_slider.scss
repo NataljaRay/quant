@@ -1,0 +1,133 @@
+.slider{
+  position: relative;
+  margin-bottom: 0!important;
+  &-list{
+    height: 836px;
+    color: $white;
+    .container{
+      padding: 0 105px;
+    }
+    &__content{
+      padding: 0 105px;
+      &.flex{
+        @include flex(space-between);
+        > div{
+          flex: 1;
+          text-align: left;
+          &.right{
+            padding-left: 155px;
+
+          }
+        }
+        .title{
+          @include font($font-Firasanslight, 50px, $white);
+          margin-top: 90px;
+          padding-bottom: 30px;
+        }
+        .text{
+          margin-bottom: 40px;
+        }
+
+        .more{
+          border: 1px solid $white;
+          border-radius: 4px;
+          background: transparent;
+          display: inline-block;
+          text-align: center;
+          line-height: 51px;
+          text-decoration: none;
+          @include font($font-Firasanslight, 20px, $white);
+
+          text-transform: uppercase;
+          box-shadow: none;
+          opacity: .85;
+
+          width: 156px;
+          height: 51px;
+          &:hover{
+            opacity: 1;
+            cursor: pointer;
+          }
+
+          &:active, &:focus{
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+
+  .slick-prev, .slick-next{
+    background: black;
+    opacity: .5;
+    height: 82px;
+    width: 34px;
+    z-index: 1;
+    &:hover{
+      opacity: .6;
+    }
+    &:before, &:after{
+      display: none;
+    }
+
+  }
+  .slick{
+    &-prev{
+      background: url('/img/slider_left.svg') no-repeat center center;
+      left: $arrow-position;
+    }
+    &-next{
+      background: url('/img/slider_right.svg') no-repeat center center;
+      right: $arrow-position;
+    }
+
+    &-dots{
+      bottom: 0;
+      //z-index: 1;
+      margin-bottom: 26px;
+      li{
+        background: white;
+        width: 8px;
+        height: 8px;
+        border: 1px solid transparent;
+        border-radius: 100%;
+        transition: .3s;
+        button{
+          display: none;
+        }
+        &:hover{
+          transition: .3s;
+          border-color: #822297;
+          background: #822297;
+        }
+        &.slick-active{
+          border-color: #822297;
+          background: rgba(0,0,0,0.5);
+          transition: .3s;
+
+        }
+      }
+
+    }
+  }
+
+
+}
+
+.slide {
+  &-1 {
+    background: url('/img/slide1.jpg') no-repeat center center;
+  }
+  &-2 {
+    background: url('/img/slide2-new.jpg') no-repeat center center;
+  }
+  &-3 {
+    background: url('/img/slide3.jpg') no-repeat center center;
+  }
+  &-4 {
+    background: url('/img/slide4-new.jpg') no-repeat center center;
+  }
+  &-5 {
+    background: url('/img/slide5-new.jpg') no-repeat center center;
+  }
+}
