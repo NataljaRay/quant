@@ -52,35 +52,78 @@ block body
 
             #investTableContent.tab-content
               #courses.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='courses-tab')
-                .tab-wrapper
+                .tab-wrapper.scroll-v
                   form
                     div.line
                       input.text-field(placeholder="Platform Name")
                       input.text-field(placeholder="Course Name")
                       button.button.button--trans-blue + Add Certificate
                     div.line.line--start
-                      button.button.button--blue Save
-                      button.button.button--trans-blue.noborder Cancel
+                      button.button.button--blue.save.inactive Save
+                      button.button.button--trans-blue.noborder.cancel Cancel
 
 
                   form
                     div.line
                       input.text-field(placeholder="Platform Name" value="Platform 3.14")
                       input.text-field(placeholder="Course Name" value="Programmer 2.0")
-                      //span.button.button--trans-blue.btn-file + Add Certificate
-                        input(type="file")
                       div.upload
-                        a.button.button--trans-blue#addSertificate(href='javascript:;') + Add Certificate
+                        //a.button.button--trans-blue#addSertificate(href='javascript:;') + Add Certificate
                           input(type='file', name='file_source', size='40', onchange='$("#upload-file-info").html($(this).val());')
-                        div.upload-info
-                          div#upload-file-info.label.label-info 123
-                          div#upload-file-info-size.label.label-info 13
+                        div.upload-info-wrapper
+                          div.upload-info
+                            div#upload-file-info.label.label-info IMG656566664_8310.jpg
+                            div#upload-file-info-size.label.label-info-size 3.2 Mb
                           span.icon-close
-                        //span(class="label label-info" id="upload-file-info") C:\fakepath\4303565c8f7c1cd18.jpg
-                          i.icon-close
+
                     div.line
-                      button.button.button--blue Save
-                      button.button.button--trans-blue.noborder Cancel
+                      button.button.button--blue.save Save
+                      button.button.button--trans-blue.noborder.cancel Cancel
+
+                  div.sertifacates
+                    .content-block.sertifacates-item
+                      div.left
+                        div.img
+                        div.info
+                          div.content-title
+                            p Platform 3.14
+                          div.sub-title Programmer 2.0
+                      div.right
+                        div.sertifacates-item-menu ...
+                          ul.sertifacates-item-menu__dropdown.content-block
+                            li
+                              a(href="#") Edit
+                            li
+                              a(href="#") Delete
+                    .content-block.sertifacates-item
+                      div.left
+                        div.img
+                        div.info
+                          div.content-title
+                            p Platform 3.14
+                          div.sub-title Programmer 2.0
+                      div.right
+                        div.sertifacates-item-menu ...
+                          ul.sertifacates-item-menu__dropdown.content-block
+                            li
+                              a(href="#") Edit
+                            li
+                              a(href="#") Delete
+                    .content-block.sertifacates-item
+                      div.left
+                        div.img
+                        div.info
+                          div.content-title
+                            p Platform 3.14
+                          div.sub-title Programmer 2.0
+                      div.right
+                        div.sertifacates-item-menu ...
+                          ul.sertifacates-item-menu__dropdown.content-block
+                            li
+                              a(href="#") Edit
+                            li
+                              a(href="#") Delete
+
 
 
               #education.tab-pane.fade(role='tabpanel', aria-labelledby='education-tab')

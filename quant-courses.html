@@ -93,7 +93,7 @@
             </ul>
             <div class="tab-content" id="investTableContent">
               <div class="tab-pane fade show active" id="courses" role="tabpanel" aria-labelledby="courses-tab">
-                <div class="tab-wrapper">
+                <div class="tab-wrapper scroll-v">
                   <form>
                     <div class="line">
                       <input class="text-field" placeholder="Platform Name">
@@ -101,31 +101,89 @@
                       <button class="button button--trans-blue">+ Add Certificate</button>
                     </div>
                     <div class="line line--start">
-                      <button class="button button--blue">Save</button>
-                      <button class="button button--trans-blue noborder">Cancel</button>
+                      <button class="button button--blue save inactive">Save</button>
+                      <button class="button button--trans-blue noborder cancel">Cancel</button>
                     </div>
                   </form>
                   <form>
                     <div class="line">
                       <input class="text-field" placeholder="Platform Name" value="Platform 3.14">
                       <input class="text-field" placeholder="Course Name" value="Programmer 2.0">
-                      <!--span.button.button--trans-blue.btn-file + Add Certificateinput(type="file")
-                      -->
-                      <div class="upload"><a class="button button--trans-blue" id="addSertificate" href="javascript:;">+ Add Certificate
-                          <input type="file" name="file_source" size="40" onchange="$(&quot;#upload-file-info&quot;).html($(this).val());"></a>
-                        <div class="upload-info">
-                          <div class="label label-info" id="upload-file-info">123</div>
-                          <div class="label label-info" id="upload-file-info-size">13</div><span class="icon-close"></span>
-                        </div>
-                        <!--span(class="label label-info" id="upload-file-info") C:\fakepath\4303565c8f7c1cd18.jpgi.icon-close
+                      <div class="upload">
+                        <!--a.button.button--trans-blue#addSertificate(href='javascript:;') + Add Certificateinput(type='file', name='file_source', size='40', onchange='$("#upload-file-info").html($(this).val());')
                         -->
+                        <div class="upload-info-wrapper">
+                          <div class="upload-info">
+                            <div class="label label-info" id="upload-file-info">IMG656566664_8310.jpg</div>
+                            <div class="label label-info-size" id="upload-file-info-size">3.2 Mb</div>
+                          </div><span class="icon-close"></span>
+                        </div>
                       </div>
                     </div>
                     <div class="line">
-                      <button class="button button--blue">Save</button>
-                      <button class="button button--trans-blue noborder">Cancel</button>
+                      <button class="button button--blue save">Save</button>
+                      <button class="button button--trans-blue noborder cancel">Cancel</button>
                     </div>
                   </form>
+                  <div class="sertifacates">
+                    <div class="content-block sertifacates-item">
+                      <div class="left">
+                        <div class="img"></div>
+                        <div class="info">
+                          <div class="content-title">
+                            <p>Platform 3.14</p>
+                          </div>
+                          <div class="sub-title">Programmer 2.0</div>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <div class="sertifacates-item-menu">...
+                          <ul class="sertifacates-item-menu__dropdown content-block">
+                            <li><a href="#">Edit</a></li>
+                            <li><a href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content-block sertifacates-item">
+                      <div class="left">
+                        <div class="img"></div>
+                        <div class="info">
+                          <div class="content-title">
+                            <p>Platform 3.14</p>
+                          </div>
+                          <div class="sub-title">Programmer 2.0</div>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <div class="sertifacates-item-menu">...
+                          <ul class="sertifacates-item-menu__dropdown content-block">
+                            <li><a href="#">Edit</a></li>
+                            <li><a href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content-block sertifacates-item">
+                      <div class="left">
+                        <div class="img"></div>
+                        <div class="info">
+                          <div class="content-title">
+                            <p>Platform 3.14</p>
+                          </div>
+                          <div class="sub-title">Programmer 2.0</div>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <div class="sertifacates-item-menu">...
+                          <ul class="sertifacates-item-menu__dropdown content-block">
+                            <li><a href="#">Edit</a></li>
+                            <li><a href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">

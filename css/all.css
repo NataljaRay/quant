@@ -166,15 +166,19 @@ body {
     cursor: pointer; }
   .main-layout .upload-info {
     position: relative;
-    display: block; }
+    display: block;
+    width: 100%;
+    max-width: 169px; }
+    .main-layout .upload-info-wrapper {
+      display: flex;
+      align-items: center; }
     .main-layout .upload-info > div {
       overflow: hidden;
-      text-overflow: ellipsis;
-      width: 90%; }
+      text-overflow: ellipsis; }
+    .main-layout .upload-info .label-info-size {
+      font-size: 12px; }
   .main-layout .upload .icon-close {
-    position: absolute;
-    right: 0;
-    top: 0;
+    margin-left: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -545,17 +549,12 @@ body {
     min-height: 452px; }
   .main-layout .quant #investTableContent {
     min-height: 452px; }
+  .main-layout .quant .tab-wrapper {
+    height: 452px; }
   .main-layout .quant .line {
     display: flex;
     height: 40px;
     margin-bottom: 16px; }
-    .main-layout .quant .line .button {
-      padding: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 199px;
-      height: 40px; }
     .main-layout .quant .line > * {
       margin-right: 15px; }
       .main-layout .quant .line > *:last-child {
@@ -564,3 +563,49 @@ body {
       justify-content: flex-start; }
       .main-layout .quant .line--start .button {
         margin-right: 15px; }
+    .main-layout .quant .line .button {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 199px;
+      height: 40px; }
+    .main-layout .quant .line .save {
+      width: 110px; }
+    .main-layout .quant .line .cancel {
+      width: 80px; }
+  .main-layout .quant .sertifacates .left {
+    display: flex; }
+  .main-layout .quant .sertifacates .right {
+    display: flex;
+    align-items: center; }
+  .main-layout .quant .sertifacates-item {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between; }
+    .main-layout .quant .sertifacates-item-menu {
+      float: right;
+      font-size: 30px;
+      margin-top: -20px;
+      position: relative; }
+      .main-layout .quant .sertifacates-item-menu__dropdown {
+        padding: 8px 0;
+        width: 100px;
+        position: absolute;
+        right: 0; }
+        .main-layout .quant .sertifacates-item-menu__dropdown a {
+          text-align: right;
+          display: block;
+          padding: 10px 30px;
+          font-size: 14px;
+          font-family: "SF-Pro-Text-Regular";
+          color: #14171c; }
+  .main-layout .quant .sertifacates .content-title {
+    padding-bottom: 0;
+    padding-top: 20px; }
+  .main-layout .quant .sertifacates .sub-title {
+    padding-left: 16px; }
+  .main-layout .quant .sertifacates .img {
+    width: 100px;
+    height: 100px;
+    background: grey; }

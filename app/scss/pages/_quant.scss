@@ -58,6 +58,7 @@
 
   .content--empty{
     min-height: 452px;
+    //overflow: hidden;
   }
 
 
@@ -65,18 +66,14 @@
   #investTableContent{
     min-height: 452px;
   }
+  .tab-wrapper{
+   height: 452px;
+    //overflow: hidden;
+    //overflow-y: scroll;
+  }
 
   .line{
-    .button{
-      padding: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 199px;
-      height: 40px;
-    }
     display: flex;
-    //justify-content: space-between;
     height: 40px;
     margin-bottom: 16px;
     > *{
@@ -90,6 +87,72 @@
       .button{
         margin-right: 15px;
       }
+    }
+    .button{
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 199px;
+      height: 40px;
+    }
+    .save{
+      width: 110px;
+    }
+    .cancel{
+      width: 80px;
+    }
+
+  }
+
+
+  .sertifacates{
+    .left{
+      display: flex;
+    }
+    .right{
+      display: flex;
+      align-items: center;
+    }
+    &-item{
+      padding: 5px;
+      display: flex;
+      justify-content: space-between;
+      &-menu{
+        float: right;
+        font-size: 30px;
+        margin-top: -20px;
+        position: relative;
+
+        &__dropdown{
+          padding: 8px 0;
+          width: 100px;
+          position: absolute;
+          right: 0;
+          a{
+            text-align: right;
+            display: block;
+            padding: 10px 30px;
+            font-size: 14px;
+            font-family: $font-SF-Pro-Text-Regular;
+            color: $text-color;
+          }
+
+        }
+
+      }
+    }
+    .content-title{
+      padding-bottom: 0;
+      padding-top: 20px;
+    }
+    .sub-title{
+      padding-left: 16px;
+    }
+    .img{
+      width: 100px;
+      height: 100px;
+      background: grey;
     }
   }
 }

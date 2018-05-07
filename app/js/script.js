@@ -5,6 +5,11 @@
             theme: "quantor"
 
         });
+        $(".scroll-v").mCustomScrollbar({
+            // axis:"yx",
+            theme: "dark"
+
+        });
     });
 })(jQuery);
 
