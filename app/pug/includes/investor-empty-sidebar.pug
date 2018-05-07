@@ -1,0 +1,19 @@
+extends ../layout/sidebar-layout
+
+block sidebar
+  div.sidebar-top
+    div.item
+      span.item-icon.portfolio-icon +
+      span.item-title My Portfolio
+  div.sidebar-bottom
+    div.sidebar-block
+      div.select-block
+        label.select-name CURRENCY
+        select.select-panel
+          option ETH
+          option ETH
+      div.text--big ETH 0
+    div.sidebar-block
+      // кнопки могуть быть ссылками - тег а или кнопками - тег button
+      button.button.button--blue.inactive Withdraw Funds
+      a(href="#").button.button--tealish.inactive Deposit Funds

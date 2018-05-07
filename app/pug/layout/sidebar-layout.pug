@@ -1,0 +1,28 @@
+div.sidebar
+  block sidebar
+    div.sidebar-top
+      div.item.is-open
+        span.item-icon.portfolio-icon +
+        span.item-title My Portfolio
+        ul.item-dropdown
+          li
+            a(href="/investor-empty.html") Algorithm 1
+          li
+            a(href="#") Algorithm 2
+          li
+            a(href="#") Algorithm 3
+
+
+    div.sidebar-bottom
+      div.sidebar-block
+        div.select-block
+          label.select-name CURRENCY
+          select.select-panel
+            option ETH
+            option ETH
+        div.text--big ETH 1’500.32
+
+      div.sidebar-block
+        // кнопки могуть быть ссылками - тег а или кнопками - тег button
+        button.button.button--blue Withdraw Funds
+        a(href="#").button.button--tealish Deposit Funds

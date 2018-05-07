@@ -1,0 +1,105 @@
+extends layout/main-layout
+
+block body
+
+  block header
+    include includes/header
+
+  block content
+    section.section.screen-1
+      include includes/quant-sidebar
+
+      div.content.quant
+
+        div.content-sidebar
+          div.content-title Income
+          div.content-block
+            div.content-block__body.graph
+              div график
+          div.content-block
+            div.content-block__body
+              div.content-block__body-wrapper
+                div.select-block
+                  label.select-name CURRENCY
+                  select.select-panel
+                    option ETH
+                    option ETH
+                div.text--big ETH 1’500.32
+
+              div.sidebar-block
+                // кнопки могуть быть ссылками - тег а или кнопками - тег button
+                button.button.button--blue Withdraw Funds
+
+
+        div.content-main
+          div.content-title
+            p Info
+          div.content-block
+            div.content-block__body
+              div.content-block__body-wrapper
+                div.info
+                  .info-label name
+                  .info-title John Doe
+                  .info-label about
+                  .info-text Quantitative trader with broad experience in developing trading models for crypto markets. Focused on automated trading strategy development at varying time horizons.
+
+          div.content-block
+            ul#quantTable.nav.nav-tabs.nav-tabs--bordered(role='tablist')
+              li.nav-item
+                a#courses-tab.nav-link.active(data-toggle='tab', href='#courses', role='tab', aria-controls='courses', aria-selected='true') Passed Courses
+              li.nav-item
+                a#education-tab.nav-link(data-toggle='tab', href='#education', role='tab', aria-controls='education', aria-selected='false') Education
+
+            #investTableContent.tab-content
+              #courses.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='courses-tab')
+                .tab-wrapper
+                  form
+                    div.line
+                      input.text-field(placeholder="Platform Name")
+                      input.text-field(placeholder="Course Name")
+                      button.button.button--trans-blue + Add Certificate
+                    div.line.line--start
+                      button.button.button--blue Save
+                      button.button.button--trans-blue.noborder Cancel
+
+
+                  form
+                    div.line
+                      input.text-field(placeholder="Platform Name" value="Platform 3.14")
+                      input.text-field(placeholder="Course Name" value="Programmer 2.0")
+                      //span.button.button--trans-blue.btn-file + Add Certificate
+                        input(type="file")
+                      div.upload
+                        a.button.button--trans-blue#addSertificate(href='javascript:;') + Add Certificate
+                          input(type='file', name='file_source', size='40', onchange='$("#upload-file-info").html($(this).val());')
+                        div.upload-info
+                          div#upload-file-info.label.label-info 123
+                          div#upload-file-info-size.label.label-info 13
+                          span.icon-close
+                        //span(class="label label-info" id="upload-file-info") C:\fakepath\4303565c8f7c1cd18.jpg
+                          i.icon-close
+                    div.line
+                      button.button.button--blue Save
+                      button.button.button--trans-blue.noborder Cancel
+
+
+              #education.tab-pane.fade(role='tabpanel', aria-labelledby='education-tab')
+                .content--empty
+
+
+
+  block footer
+
+
+  block modal
+
+
+append scripts
+
+
+
+  // анимация при прокрутке
+  //script new WOW().init();
+  //script(src = 'js/telegram-en.js')
+
+

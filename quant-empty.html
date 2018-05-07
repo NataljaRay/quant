@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1280, initial-scale=1">
+    <!--meta(name="viewport" content="initial-scale=1")-->
+    <title>Quantor</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/scrollbar/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+  </head>
+  <body class="main-layout">
+    <header class="header">
+      <div class="container--flex">
+        <div class="header-left"><a class="logo" href="/"><img src="/img/logo.svg"></a>
+          <div class="nav"><a class="nav-link" href="#">Develope</a><a class="nav-link" href="#">Marketplace</a><a class="nav-link" href="#">Learn</a><a class="nav-link" href="#">Contest</a></div>
+        </div>
+        <div class="header-right">
+          <div class="personal-account"><a href="#">investor@gmail.com</a></div>
+        </div>
+      </div>
+    </header>
+    <section class="section screen-1">
+      <div class="sidebar">
+        <div class="sidebar-top">
+          <div class="item profile"><span class="item-icon profile-icon"></span><span class="item-title">Profile</span>
+            <!--ul.portfolio-dropdown
+            li
+              a(href="/investor-empty.html") Algorithm 1
+            li
+              a(href="#") Algorithm 2
+            li
+              a(href="#") Algorithm 3
+            -->
+          </div>
+          <div class="item item--child testing is-open"><span class="item-icon testing-icon"></span><span class="item-title testing-title">Testing Platform</span>
+            <ul class="item-dropdown">
+              <li><a href="#">Standard MACD strategy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="content quant">
+        <div class="content-sidebar">
+          <div class="content-title">Income</div>
+          <div class="content-block">
+            <div class="content-block__body graph">
+              <div>график</div>
+            </div>
+          </div>
+          <div class="content-block">
+            <div class="content-block__body">
+              <div class="content-block__body-wrapper">
+                <div class="select-block">
+                  <label class="select-name">CURRENCY</label>
+                  <select class="select-panel">
+                    <option>ETH</option>
+                    <option>ETH</option>
+                  </select>
+                </div>
+                <div class="text--big">ETH 1’500.32</div>
+              </div>
+              <div class="sidebar-block">
+                <!-- кнопки могуть быть ссылками - тег а или кнопками - тег button-->
+                <button class="button button--blue">Withdraw Funds</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-main">
+          <div class="content-title">
+            <p>Info</p>
+          </div>
+          <div class="content-block">
+            <div class="content-block__body">
+              <div class="content-block__body-wrapper">
+                <div class="info">
+                  <div class="info-label">name</div>
+                  <div class="info-title">John Doe</div>
+                  <div class="info-label">about</div>
+                  <div class="info-text">Quantitative trader with broad experience in developing trading models for crypto markets. Focused on automated trading strategy development at varying time horizons.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-block">
+            <ul class="nav nav-tabs nav-tabs--bordered" id="quantTable" role="tablist">
+              <li class="nav-item"><a class="nav-link active" id="courses-tab" data-toggle="tab" href="#courses" role="tab" aria-controls="courses" aria-selected="true">Passed Courses</a></li>
+              <li class="nav-item"><a class="nav-link" id="education-tab" data-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="false">Education</a></li>
+            </ul>
+            <div class="tab-content" id="investTableContent">
+              <div class="tab-pane fade show active" id="courses" role="tabpanel" aria-labelledby="courses-tab">
+                <div class="content--empty">
+                  <div class="content-info">
+                    <p>Add information about the courses you’ve passed</p><a class="button button--blue" href="#">+ Add Course</a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
+                <div class="content--empty"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="js/highcharts.js"></script>
+    <script src="/js/script.js"></script>
+    <!-- анимация при прокрутке-->
+    <!--script new WOW().init();-->
+    <!--script(src = 'js/telegram-en.js')-->
+  </body>
+</html>

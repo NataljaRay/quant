@@ -1,0 +1,62 @@
+.header{
+  background-color: $background;
+  @include font($font-SF-Pro-Text-Medium, 14px, $text-color);
+  //height: 52px;
+  //box-sizing: border-box;
+  padding: 16px;
+  //position: absolute;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  line-height: 1.36;
+  letter-spacing: -0.1px;
+
+  border-bottom: 1px solid $border-color;
+  margin-bottom: 15px;
+
+  &-left,
+  &-right{
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+  &-left{
+    flex: 2;
+  }
+  &-right{
+    justify-content: flex-end;
+  }
+
+
+  .logo{
+    height: 55px;
+  }
+
+  .nav{
+    &-link{
+      margin-left: 24px;
+      padding: 0;
+      color: $text-color;
+    }
+  }
+
+  .personal-account{
+    display: flex;
+    align-items: center;
+    a{
+      border-bottom: 1px dashed $text-color;
+      color: $text-color;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+    &:after{
+      @extend %before-after;
+      background: url(../img/arrow-down.svg) no-repeat center center;
+      margin-left: 8px;
+      width: 14px;
+
+    }
+  }
+
+}

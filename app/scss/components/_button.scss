@@ -1,31 +1,58 @@
 .button {
-  border: 2px solid #fff;
-  //border-radius: 0px;
+
+  outline: none;
   background: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+
+  display: inline-block;
+  text-align: center;
   line-height: normal;
   text-decoration: none;
 
-  font-family: $font-FiraMono-Regular;
-  font-size: 16px;
+  @include font($font-SF-Pro-Text-Medium, 14px, #ffffff);
+  font-weight: 500;
 
-  color: #fff;
-  //text-transform: uppercase;
   box-shadow: none;
+  text-shadow: none;
   opacity: 1;
-  width: 96px;
-  height: 40px;
-  cursor: pointer;
+  padding: 9px 41px;
+  width: auto;
+
   &:hover{
     opacity: .85;
   }
 
 
-
   &--blue{
+    background-color: $blue;
     border-color: $blue;
+  }
+  &--trans-blue{
+    background-color: white;
     color: $blue;
+    border-color: $blue;
+  }
+  &--tealish{
+    background-color: $tealish;
+    border-color: $tealish;
+  }
+
+  &.noborder{
+    border: none;
+    padding: 9px;
+  }
+
+  &.inactive{
+    opacity: .2;
+    cursor: default;
+  }
+  &.active{
+    opacity: 1;
   }
 }

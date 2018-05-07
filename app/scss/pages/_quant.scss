@@ -1,0 +1,95 @@
+//quant pages
+
+.quant{
+  margin-right: 32px;
+
+  .content{
+
+    &-sidebar{
+      width: 364px;
+      margin-left: 0;
+      margin-right: 16px;
+
+      .content-block__body{
+        padding: 0;
+
+        .select-block{
+          max-width: 212px;
+        }
+
+        .sidebar-block{
+          padding: 24px;
+        }
+      }
+
+    }
+  }
+
+
+  .graph{
+    height: auto;
+    padding: 0;
+    //background: lavender;
+    min-height: 246px;
+  }
+
+
+  .info{
+
+    &-label{
+      @extend %label;
+      margin-bottom: 4px;
+    }
+    &-title{
+      font-family: $font-SF-Pro-Display-Medium;
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: normal;
+      margin-bottom: 24px;
+    }
+    &-text{
+      //font-family: $font-SF-Pro-Text-Regular;
+      font-size: 16px;
+      line-height: 1.63;
+      letter-spacing: -0.1px;
+    }
+
+  }
+
+  .content--empty{
+    min-height: 452px;
+  }
+
+
+  // course-tab
+  #investTableContent{
+    min-height: 452px;
+  }
+
+  .line{
+    .button{
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 199px;
+      height: 40px;
+    }
+    display: flex;
+    //justify-content: space-between;
+    height: 40px;
+    margin-bottom: 16px;
+    > *{
+      margin-right: 15px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+    &--start{
+      justify-content: flex-start;
+      .button{
+        margin-right: 15px;
+      }
+    }
+  }
+}

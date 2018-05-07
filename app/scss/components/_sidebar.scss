@@ -1,0 +1,138 @@
+.sidebar{
+  width: 292px;
+  //flex-basis: 292px;
+  height: calc(100vh - (88px + 15px));
+  //background: grey;
+  display: flex;
+  flex-direction: column;
+  //flex: 1;
+  justify-content: space-between;
+  //margin-right: 28px;
+
+
+  &-block{
+    border-top: 1px solid rgba(20, 23, 28, 0.1);
+    padding: 24px 40px;
+    .button{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 24px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}
+.text{
+  &--big{
+    font-size: 20px;
+    font-family: $font-SF-Pro-Display-Thin;
+    margin-top: 16px;
+  }
+}
+
+.item{
+  position: relative;
+  width: 292px;
+  height: 52px;
+  background-color: $background;
+  border-left: 4px solid $blue;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $border-color;
+}
+
+.item{
+  position: relative;
+  width: 292px;
+  height: 52px;
+  background-color: $background;
+  border-left: 4px solid $blue;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $border-color;
+
+  &-icon{
+    background: black;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 0 12px;
+  }
+  &-title{
+    font-family: $font-SF-Pro-Text-Bold;
+    color: $blue;
+  }
+
+  &-dropdown{
+    padding: 0;
+    position: absolute;
+    top: 52px;
+    width: 100%;
+    li{
+      a{
+        height: 52px;
+        display: flex;
+        align-items: center;
+        color: $text-color;
+        text-decoration: none;
+        padding-left: 64px;
+        &:hover{
+          background: rgba(20, 23, 28, 0.01)
+        }
+      }
+    }
+  }
+
+  &.is-open{
+    &:after{
+      @extend %before-after;
+      background: url(../../img/arrow-down.svg) no-repeat center center;
+      margin-left: 30px;
+      width: 14px;
+      transform: rotate(-180deg);
+      margin-top: -1px;
+    }
+  }
+
+
+  &--child{
+    background: transparent;
+    border-left-color: transparent;
+    .item{
+      &-title{
+        font-family: $font-SF-Pro-Text-Regular;
+        color: $text-color;
+      }
+    }
+  }
+
+}
+
+
+.portfolio{
+  &-icon{
+    //background: url(../../img/profile.svg) no-repeat center center;
+  }
+}
+
+.profile{
+  border-bottom: none;
+  &-icon{
+    background: url(../../img/profile.svg) no-repeat center center;
+  }
+}
+
+.testing{
+  &-icon{
+    //background: url(../../img/profile.svg) no-repeat center center;
+  }
+  &.is-open{
+    &:after{
+      margin-left: 8px;
+      margin-top: 0;
+    }
+  }
+}

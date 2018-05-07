@@ -1,0 +1,20 @@
+extends ../layout/sidebar-layout
+
+block sidebar
+  div.sidebar-top
+    div.item.profile
+      span.item-icon.profile-icon
+      span.item-title Profile
+      //ul.portfolio-dropdown
+        li
+          a(href="/investor-empty.html") Algorithm 1
+        li
+          a(href="#") Algorithm 2
+        li
+          a(href="#") Algorithm 3
+    div.item.item--child.testing.is-open
+      span.item-icon.testing-icon
+      span.item-title.testing-title Testing Platform
+      ul.item-dropdown
+        li
+          a(href="#") Standard MACD strategy

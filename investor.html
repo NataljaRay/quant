@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1280, initial-scale=1">
+    <!--meta(name="viewport" content="initial-scale=1")-->
+    <title>Quantor</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/scrollbar/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+  </head>
+  <body class="main-layout">
+    <header class="header">
+      <div class="container--flex">
+        <div class="header-left"><a class="logo" href="/"><img src="/img/logo.svg"></a>
+          <div class="nav"><a class="nav-link" href="#">Develope</a><a class="nav-link" href="#">Marketplace</a><a class="nav-link" href="#">Learn</a><a class="nav-link" href="#">Contest</a></div>
+        </div>
+        <div class="header-right">
+          <div class="personal-account"><a href="#">investor@gmail.com</a></div>
+        </div>
+      </div>
+    </header>
+    <section class="section screen-1">
+      <div class="sidebar">
+        <div class="sidebar-top">
+          <div class="item is-open"><span class="item-icon portfolio-icon">+</span><span class="item-title">My Portfolio</span>
+            <ul class="item-dropdown">
+              <li><a href="/investor-empty.html">Algorithm 1</a></li>
+              <li><a href="#">Algorithm 2</a></li>
+              <li><a href="#">Algorithm 3</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="sidebar-bottom">
+          <div class="sidebar-block">
+            <div class="select-block">
+              <label class="select-name">CURRENCY</label>
+              <select class="select-panel">
+                <option>ETH</option>
+                <option>ETH</option>
+              </select>
+            </div>
+            <div class="text--big">ETH 1’500.32</div>
+          </div>
+          <div class="sidebar-block">
+            <!-- кнопки могуть быть ссылками - тег а или кнопками - тег button-->
+            <button class="button button--blue">Withdraw Funds</button><a class="button button--tealish" href="#">Deposit Funds</a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content-main">
+          <div class="content-title">
+            <p>Portfolio Dynamics</p>
+          </div>
+          <div class="content-block">
+            <div class="content-block__head">
+              <div class="zoom">
+                <label class="zoom-title">zoom</label>
+                <div class="zoom-panel"><span class="zoom-btn">1m</span><span class="zoom-btn active">3m</span><span class="zoom-btn">6m</span><span class="zoom-btn">YTD</span><span class="zoom-btn inactive">1y</span><span class="zoom-btn">All</span></div>
+              </div>
+              <div class="date">
+                <div class="date-from">
+                  <label class="date-title">from</label>
+                  <input class="date-field" value="Sep 27, 2017">
+                </div>
+                <div class="date-to">
+                  <label class="date-title">to</label>
+                  <input class="date-field" value="Dec 27, 2017">
+                </div>
+              </div>
+            </div>
+            <div class="content-block__body graph scroll">
+              <div class="lines">ГРАФИК</div>
+            </div>
+          </div>
+          <div class="content-block">
+            <ul class="nav nav-tabs" id="investTable" role="tablist">
+              <li class="nav-item"><a class="nav-link active" id="investments-tab" data-toggle="tab" href="#investments" role="tab" aria-controls="investments" aria-selected="true">Investments</a></li>
+              <li class="nav-item"><a class="nav-link" id="history-tab" data-toggle="tab" href="#history" role="tab" aria-controls="history" aria-selected="false">History</a></li>
+            </ul>
+            <div class="tab-content" id="investTableContent">
+              <div class="tab-pane fade show active" id="investments" role="tabpanel" aria-labelledby="investments-tab">
+                <div class="tab-table">
+                  <table>
+                    <thead>
+                      <th>ALGORITHM</th>
+                      <th>UNITS</th>
+                      <th>AMOUNT INVESTED</th>
+                      <th>CURRENCY</th>
+                      <th>TRANSACTION DATE</th>
+                      <th>CHANGE</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Beta</td>
+                        <td>2</td>
+                        <td>0.0854</td>
+                        <td>BTC</td>
+                        <td>2018-01-03 16:00:56</td>
+                        <td class="success">+14.34%</td>
+                      </tr>
+                      <tr>
+                        <td>Alpha</td>
+                        <td>3</td>
+                        <td>2.6564</td>
+                        <td>BTC</td>
+                        <td>2018-01-03 16:00:56</td>
+                        <td class="fail">-4.11%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="history-tab">
+                <div class="tab-table">
+                  <table>
+                    <thead>
+                      <th>OPERATION</th>
+                      <th>AMOUNT</th>
+                      <th>CURRENCY</th>
+                      <th>BALANCE</th>
+                      <th>ALGORITHM</th>
+                      <th>DATE</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Deposit</td>
+                        <td>2.9577</td>
+                        <td>QNT</td>
+                        <td>12.4563</td>
+                        <td>Beta</td>
+                        <td>2017-12-23 16:00:56</td>
+                      </tr>
+                      <tr>
+                        <td>Withdraw</td>
+                        <td>3.0032</td>
+                        <td>QNT</td>
+                        <td>9.4531</td>
+                        <td>Beta</td>
+                        <td>2018-01-14 08:12:56</td>
+                      </tr>
+                      <tr>
+                        <td>Deposit</td>
+                        <td>0.9000</td>
+                        <td>ETH</td>
+                        <td>0.9000</td>
+                        <td>Alpha</td>
+                        <td>2017-12-23 16:00:56</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-sidebar">
+          <div class="content-title"></div>
+          <div class="content-block">
+            <div class="content-block__head content-block__head--thin">
+              <label>PORTFOLIO COMPOSITIOIN</label>
+            </div>
+            <div class="content-block__body chart">
+              <div id="container"></div>
+            </div>
+            <div class="content-block__head content-block__head--thin">
+              <label>PORTFOLIO STATISTICS</label>
+            </div>
+            <div class="content-block__body">
+              <div class="params">
+                <div class="params-item">
+                  <div class="value">-224%</div>
+                  <div class="value-title">return</div>
+                </div>
+                <div class="params-item">
+                  <div class="value">435</div>
+                  <div class="value-title">TOTAL TRADES</div>
+                </div>
+              </div>
+              <div class="params">
+                <div class="params-item">
+                  <div class="value">1.5</div>
+                  <div class="value-title">SHARPE RATIO</div>
+                </div>
+                <div class="params-item">
+                  <div class="value">5%</div>
+                  <div class="value-title">DRAWDOWN</div>
+                </div>
+              </div>
+              <div class="params">
+                <div class="params-item">
+                  <div class="value">BTC, ETH</div>
+                  <div class="value-title">TRADED INSTRUMEN</div>
+                </div>
+                <div class="params-item">
+                  <div class="value">Poloniex, Bitfinex</div>
+                  <div class="value-title">EXCHANGES</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--footer.footer#contacts footer
+    div.container.container--flex
+    
+    
+    -->
+    <!--div.modal#modal
+    div.dialog
+      form(method="post" id="ajax_form" action="")
+        //div.message(style="display: none;")
+        div.message.success.translate_me(data-lang="message_success" style="display: none;") Ваша заявка отправлена. Скоро мы свяжемся с Вами!
+        div.message.fail.translate_me(data-lang="message_fail" style="display: none;") Ошибка. Данные не отправлены.
+        div.form
+          div.dialog-header
+            span.close
+          div.dialog-body.translate_me(data-lang="dialog_body")
+            input.dialog-field(type="text" name="name" placeholder="Имя, фамилия" tabindex="1" required="required" autofocus )
+            input.dialog-field(type="text" name="phone" placeholder="Телефон или e-mail" required="required" tabindex="2")
+            textarea.dialog-field(name="letter" placeholder="Введите ваше сообщение" tabindex="3")
+          div.dialog-footer
+            input.button.ru(type="button" class="send" value='Отправить')
+            input.button.en(type="button" class="send" value='Send')
+    
+    -->
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="js/highcharts.js"></script>
+    <script src="/js/script.js"></script>
+    <!-- анимация при прокрутке-->
+    <!--script new WOW().init();-->
+    <!--script(src = 'js/telegram-en.js')-->
+  </body>
+</html>

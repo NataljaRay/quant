@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="78px" height="95px" viewBox="0 0 78 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>949B473E-28EF-4520-838B-968D6C04F9F4</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="22.6074219%" x2="0%" y2="65.8886719%" id="linearGradient-1">
+            <stop stop-color="#9062E9" offset="0%"></stop>
+            <stop stop-color="#473CB5" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="22.6074219%" x2="0%" y2="65.8886719%" id="linearGradient-2">
+            <stop stop-color="#A373FF" offset="0%"></stop>
+            <stop stop-color="#5E51DB" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="23.8544034%" cy="31.3268229%" fx="23.8544034%" fy="31.3268229%" r="117.127362%" gradientTransform="translate(0.238544,0.313268),scale(1.000000,0.937500),rotate(135.841105),translate(-0.238544,-0.313268)" id="radialGradient-3">
+            <stop stop-color="#5626C4" offset="0%"></stop>
+            <stop stop-color="#2B0558" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="23.8544034%" cy="31.3268229%" fx="23.8544034%" fy="31.3268229%" r="140.523896%" gradientTransform="translate(0.238544,0.313268),scale(1.000000,0.937500),rotate(31.417717),translate(-0.238544,-0.313268)" id="radialGradient-4">
+            <stop stop-color="#5626C4" offset="0%"></stop>
+            <stop stop-color="#2B0558" offset="100%"></stop>
+        </radialGradient>
+        <filter x="-117.2%" y="-72.1%" width="334.4%" height="244.2%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.702221585   0 0 0 0 0.617291528   0 0 0 0 0.941087372  0 0 0 0.400000006 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Algorithm" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02-Algorithm---Alert---Investment" transform="translate(-681.000000, -702.000000)" fill-rule="nonzero">
+            <g id="Group-3" transform="translate(543.000000, 489.000000)">
+                <g id="Group-2" transform="translate(161.000000, 234.000000)">
+                    <g id="ethereum-seeklogo.com" opacity="0.100000001" transform="translate(10.000000, 10.000000)">
+                        <polygon id="Shape" fill="url(#linearGradient-1)" points="15.363384 0 15 1.1876732 15 35.6511991 15.363384 36 32 26.543871"></polygon>
+                        <polygon id="Shape" fill="url(#linearGradient-2)" points="15 0 0 26.5437788 15 36 15 19.2724937"></polygon>
+                        <polygon id="Shape" fill="url(#linearGradient-2)" points="15.2065765 38.6428571 15 38.8877551 15 51.4131378 15.2065765 52 32 29"></polygon>
+                        <polygon id="Shape" fill="url(#linearGradient-2)" points="15 52 15 38.6428571 0 29"></polygon>
+                        <polygon id="Shape" fill="url(#radialGradient-3)" points="15 35 30 25.9551491 15 19"></polygon>
+                        <polygon id="Shape" fill="url(#radialGradient-4)" points="0 25.9551491 15 35 15 19"></polygon>
+                    </g>
+                    <g id="ethereum-seeklogo.com-copy" opacity="0.200000003" transform="translate(5.000000, 5.000000)">
+                        <polygon id="Shape" fill="url(#linearGradient-1)" points="15.363384 0 15 1.1876732 15 35.6511991 15.363384 36 32 26.543871"></polygon>
+                        <polygon id="Shape" fill="url(#linearGradient-2)" points="15 0 0 26.5437788 15 36 15 19.2724937"></polygon>
+                        <polygon id="Shape" fill="url(#linearGradient-2)" points="15.2065765 38.6428571 15 38.8877551 15 51.4131378 15.2065765 52 32 29"></polygon>
+                        <polygon id="Shape" fill="url(#linearGradient-2)" points="15 52 15 38.6428571 0 29"></polygon>
+                        <polygon id="Shape" fill="url(#radialGradient-3)" points="15 35 30 25.9551491 15 19"></polygon>
+                        <polygon id="Shape" fill="url(#radialGradient-4)" points="0 25.9551491 15 35 15 19"></polygon>
+                    </g>
+                    <g id="ethereum-seeklogo.com-copy-2" filter="url(#filter-5)">
+                        <polygon id="Shape" fill="url(#linearGradient-1)" points="15.363384 0 15 1.1876732 15 35.6511991 15.363384 36 32 26.543871"></polygon>
+                        <polygon id="Shape" fill="url(#linearGradient-2)" points="15 0 0 26.5437788 15 36 15 19.2724937"></polygon>
+                        <polygon id="Shape" fill="url(#linearGradient-2)" points="15.2065765 38.6428571 15 38.8877551 15 51.4131378 15.2065765 52 32 29"></polygon>
+                        <polygon id="Shape" fill="url(#linearGradient-2)" points="15 52 15 38.6428571 0 29"></polygon>
+                        <polygon id="Shape" fill="url(#radialGradient-3)" points="15 35 30 25.9551491 15 19"></polygon>
+                        <polygon id="Shape" fill="url(#radialGradient-4)" points="0 25.9551491 15 35 15 19"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

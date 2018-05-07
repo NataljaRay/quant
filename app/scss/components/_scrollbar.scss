@@ -1,0 +1,32 @@
+.mCS-quantor{
+  .mCSB_draggerRail{
+    height: 15px;
+    margin: 0;
+    background: white;
+  }
+  .mCSB_dragger{
+    //background: red!important;
+    margin: 0;
+    &:hover .mCSB_dragger_bar,
+    &:focus .mCSB_dragger_bar,
+    &:active .mCSB_dragger_bar{
+      background: rgba(47, 66, 104, 0.4);
+    }
+  }
+  .mCSB_dragger_bar{
+    background: rgba(47, 66, 104, 0.3);
+    height: 8px!important;
+    margin: 4px auto!important;
+    &:hover,
+    &:focus,
+    &:active{
+      background: rgba(47, 66, 104, 0.4);
+    }
+  }
+
+
+  .mCSB_scrollTools{
+    background: white;
+    opacity: 1!important;
+  }
+}

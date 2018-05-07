@@ -1,0 +1,30 @@
+extends layout/main-layout
+
+block body
+
+  block header
+    include includes/header
+
+  block content
+    section.section.screen-1
+      include includes/investor-empty-sidebar
+
+
+      div.content.content--empty
+        div.content-info
+          p You have no investments.
+          p Go to marketplace and choose an algorithm to invest.
+          a(href="#").button.button--blue Go To Marketplace
+
+
+
+
+  block footer
+
+  block modal
+
+
+append scripts
+
+
+

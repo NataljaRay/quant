@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-9" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-491.000000, -259.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Bars/Social-Media/Icons/google-+-base-+-Bars/Social-Media/Icons/twitter-+-Bars/Social-Media/Icons/reddit-+-Rectangle-3-+-Bars/Social-Media/Icons/telegram-+-Bars/Social-Media/Icons/Linked-In-Mask" transform="translate(491.000000, 259.000000)">
+                <path d="M11.9850185,0 C5.36629158,0 0,5.36629158 0,11.9850185 C0,18.6037454 5.36629158,23.970037 11.9850185,23.970037 C18.6037454,23.970037 23.970037,18.6037454 23.970037,11.9850185 C23.970037,5.36481314 18.6037454,0 11.9850185,0 Z M15.0831376,11.9834908 L13.1190801,11.9849692 L13.1176016,19.1759507 L10.4224559,19.1759507 L10.4224559,11.9850185 L8.62472279,11.9850185 L8.62472279,9.50710472 L10.4224559,9.50562628 L10.4194497,8.04645585 C10.4194497,6.024 10.9677536,4.79403696 13.3482875,4.79403696 L15.3318111,4.79403696 L15.3318111,7.27342916 L14.0913511,7.27342916 C13.1640246,7.27342916 13.1190801,7.61948255 13.1190801,8.26516632 L13.1160739,9.50562628 L15.3452649,9.50562628 L15.0831376,11.9834908 Z" id="facebook"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,5 +1,24 @@
-# Add any directories, files, or patterns you don't want to be tracked by version control
+# ignore IDE/hidden/OS cache files
+.*
+*~
+nbproject
+nb-configuration.xml
+Session.vim
+*.tmproj
+*.tmproject
+tmtags
+Thumbs.db
+Desktop.ini
+.idea
+cgi-bin
+
+# ignore Composer downloads
+/vendor/*
+
+# keep some hiddens
+!.htaccess
+!/.gitignore
+!/.travis.yml
+
 .idea/
 node_modules/
-dist/
-design/

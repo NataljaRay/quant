@@ -1,0 +1,70 @@
+.text-field{
+  width: 210px;
+  height: 40px;
+  border-radius: 2px;
+  background-color: rgba(49, 67, 191, 0.1);
+  border: solid 1px rgba(49, 67, 191, 0.4);
+  padding: 10px 16px 11px;
+
+  &:active,
+  &:focus{
+    border: solid 1px rgba(49, 67, 191, 0.9);
+    outline: none;
+    box-shadow: none;
+  }
+
+}
+
+
+.upload {
+  position: relative;
+  width: 199px;
+
+  input[type='file'] {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    filter: alpha(opacity=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    opacity: 0;
+    background-color: transparent;
+    color: transparent;
+    width: 199px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  &-info{
+    position: relative;
+    display: block;
+    > div{
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 90%;
+    }
+
+  }
+  .icon-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    //background-color: rgba(5, 41, 108, 0.4);
+    font-style: normal;
+    color: white;
+    font-size: 16px;
+    line-height: 0;
+    text-align: center;
+    //transform: rotate(-45deg);
+    background: url(../../img/close.svg) no-repeat center center rgba(5, 41, 108, 0.4);
+    background-size: 56%;
+
+  }
+
+}
