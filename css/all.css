@@ -319,21 +319,9 @@ body {
   position: relative;
   width: 292px;
   height: 52px;
-  background-color: #f1f1f1;
-  border-left: 4px solid #3143bf;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #dadadb; }
-
-.main-layout .item {
-  position: relative;
-  width: 292px;
-  height: 52px;
-  background-color: #f1f1f1;
-  border-left: 4px solid #3143bf;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #dadadb; }
+  border-bottom: 1px solid transparent; }
   .main-layout .item-icon {
     background: black;
     width: 20px;
@@ -363,12 +351,27 @@ body {
     width: 14px;
     transform: rotate(-180deg);
     margin-top: -1px; }
+  .main-layout .item--main {
+    background-color: #f1f1f1;
+    border-left: 4px solid #3143bf;
+    width: 292px;
+    height: 52px;
+    display: flex;
+    align-items: center; }
+    .main-layout .item--main li {
+      padding-left: 60px; }
+    .main-layout .item--main a {
+      color: #3143bf;
+      font-family: "SF-Pro-Text-Bold"; }
   .main-layout .item--child {
     background: transparent;
-    border-left-color: transparent; }
+    border-left-color: transparent;
+    border-bottom: 1px solid #dadadb; }
     .main-layout .item--child .item-title {
       font-family: "SF-Pro-Text-Regular";
       color: #14171c; }
+  .main-layout .item--for-button {
+    justify-content: center; }
 
 .main-layout .profile {
   border-bottom: none; }

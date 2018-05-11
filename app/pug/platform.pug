@@ -1,0 +1,167 @@
+extends layout/main-layout
+
+block body
+
+  block header
+    include includes/header
+
+  block content
+    section.section.screen-1
+      include includes/platform-sidebar
+
+      div.content
+        div.content-main
+          div.content-tabs-block
+            ul#testingPlatform.nav.nav-tabs(role='tablist')
+              li.nav-item
+                a#testing-tab.nav-link.active(data-toggle='tab', href='#testing', role='tab', aria-controls='testing', aria-selected='true') Testing Platform
+              li.nav-item
+                a#started-tab.nav-link(data-toggle='tab', href='#started', role='tab', aria-controls='started', aria-selected='false') Get Started
+
+            #testingPlatformContent.tab-content
+              #testing.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='testing-tab')
+                div.content-title
+                  p Portfolio Dynamics
+                div.content-block
+                  div.content-block__head
+                    div.zoom
+                      label.zoom-title zoom
+                      div.zoom-panel
+                        span.zoom-btn 1m
+                        span.zoom-btn.active 3m
+                        span.zoom-btn 6m
+                        span.zoom-btn YTD
+                        span.zoom-btn.inactive 1y
+                        span.zoom-btn All
+
+                    div.date
+                      div.date-from
+                        label.date-title from
+                        input.date-field(value='Sep 27, 2017')
+                      div.date-to
+                        label.date-title to
+                        input.date-field(value='Dec 27, 2017')
+
+                  div.content-block__body.graph.scroll
+                    div.lines ГРАФИК
+              #started.tab-pane.fade(role='tabpanel', aria-labelledby='started-tab') ...
+
+
+
+
+
+
+          div.content-block
+            ul#investTable.nav.nav-tabs(role='tablist')
+              li.nav-item
+                a#investments-tab.nav-link.active(data-toggle='tab', href='#investments', role='tab', aria-controls='investments', aria-selected='true') Investments
+              li.nav-item
+                a#history-tab.nav-link(data-toggle='tab', href='#history', role='tab', aria-controls='history', aria-selected='false') History
+
+            #investTableContent.tab-content
+              #investments.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='investments-tab')
+                .tab-table
+                  table
+                    thead
+                      th ALGORITHM
+                      th UNITS
+                      th AMOUNT INVESTED
+                      th CURRENCY
+                      th TRANSACTION DATE
+                      th CHANGE
+                    tbody
+                      tr
+                        td Beta
+                        td 2
+                        td 0.0854
+                        td BTC
+                        td 2018-01-03 16:00:56
+                        td.success +14.34%
+                      tr
+                        td Alpha
+                        td 3
+                        td 2.6564
+                        td BTC
+                        td 2018-01-03 16:00:56
+                        td.fail -4.11%
+              #history.tab-pane.fade(role='tabpanel', aria-labelledby='history-tab')
+                .tab-table
+                  table
+                    thead
+                      th OPERATION
+                      th AMOUNT
+                      th CURRENCY
+                      th BALANCE
+                      th ALGORITHM
+                      th DATE
+                    tbody
+                      tr
+                        td Deposit
+                        td 2.9577
+                        td QNT
+                        td 12.4563
+                        td Beta
+                        td 2017-12-23 16:00:56
+                      tr
+                        td Withdraw
+                        td 3.0032
+                        td QNT
+                        td 9.4531
+                        td Beta
+                        td 2018-01-14 08:12:56
+                      tr
+                        td Deposit
+                        td 0.9000
+                        td ETH
+                        td 0.9000
+                        td Alpha
+                        td 2017-12-23 16:00:56
+
+
+        div.content-sidebar
+          div.content-title Backtest Settings
+          div.content-block
+            div.content-block__head.content-block__head--thin
+              label ALGORITHM SETTINGS
+            div.content-block__body(style="height: 227px")
+            div.content-block__head.content-block__head--thin
+              label PAPER TRADER SETTINGS
+            div.content-block__body(style="height: 227px")
+
+
+
+
+
+
+  block footer
+    //footer.footer#contacts footer
+      div.container.container--flex
+
+
+  block modal
+    //div.modal#modal
+      div.dialog
+        form(method="post" id="ajax_form" action="")
+          //div.message(style="display: none;")
+          div.message.success.translate_me(data-lang="message_success" style="display: none;") Ваша заявка отправлена. Скоро мы свяжемся с Вами!
+          div.message.fail.translate_me(data-lang="message_fail" style="display: none;") Ошибка. Данные не отправлены.
+          div.form
+            div.dialog-header
+              span.close
+            div.dialog-body.translate_me(data-lang="dialog_body")
+              input.dialog-field(type="text" name="name" placeholder="Имя, фамилия" tabindex="1" required="required" autofocus )
+              input.dialog-field(type="text" name="phone" placeholder="Телефон или e-mail" required="required" tabindex="2")
+              textarea.dialog-field(name="letter" placeholder="Введите ваше сообщение" tabindex="3")
+            div.dialog-footer
+              input.button.ru(type="button" class="send" value='Отправить')
+              input.button.en(type="button" class="send" value='Send')
+
+append scripts
+
+
+
+  // анимация при прокрутке
+  //script new WOW().init();
+  //script(src = 'js/telegram-en.js')
+
+

@@ -33,26 +33,17 @@
   }
 }
 
-.item{
-  position: relative;
-  width: 292px;
-  height: 52px;
-  background-color: $background;
-  border-left: 4px solid $blue;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid $border-color;
-}
+
 
 .item{
   position: relative;
   width: 292px;
   height: 52px;
-  background-color: $background;
-  border-left: 4px solid $blue;
+  //background-color: $background;
+  //border-left: 4px solid $blue;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid transparent;
 
   &-icon{
     background: black;
@@ -97,16 +88,36 @@
     }
   }
 
+  &--main{
+    background-color: $background;
+    border-left: 4px solid $blue;
+    width: 292px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    li{
+      padding-left: 60px;
+    }
+    a{
+      color: $blue;
+      font-family: $font-SF-Pro-Text-Bold;
+    }
+  }
 
   &--child{
     background: transparent;
     border-left-color: transparent;
+    border-bottom: 1px solid #dadadb;
     .item{
       &-title{
         font-family: $font-SF-Pro-Text-Regular;
         color: $text-color;
       }
     }
+  }
+
+  &--for-button{
+    justify-content: center;
   }
 
 }
