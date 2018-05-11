@@ -46,28 +46,76 @@
             <div class="tab-content" id="testingPlatformContent">
               <div class="tab-pane fade show active" id="testing" role="tabpanel" aria-labelledby="testing-tab">
                 <div class="content-title">
-                  <p>Portfolio Dynamics</p>
+                  <p>Standard MACD strategy</p>
                 </div>
                 <div class="content-block">
-                  <div class="content-block__head">
-                    <div class="zoom">
-                      <label class="zoom-title">zoom</label>
-                      <div class="zoom-panel"><span class="zoom-btn">1m</span><span class="zoom-btn active">3m</span><span class="zoom-btn">6m</span><span class="zoom-btn">YTD</span><span class="zoom-btn inactive">1y</span><span class="zoom-btn">All</span></div>
-                    </div>
-                    <div class="date">
-                      <div class="date-from">
-                        <label class="date-title">from</label>
-                        <input class="date-field" value="Sep 27, 2017">
+                  <div class="content-block__head" style="height: 84px">
+                    <div>
+                      <div class="select-block">
+                        <label class="select-name">CURRENCY</label>
+                        <select class="select-panel">
+                          <option>ETH</option>
+                          <option>ETH</option>
+                        </select>
                       </div>
-                      <div class="date-to">
-                        <label class="date-title">to</label>
-                        <input class="date-field" value="Dec 27, 2017">
+                      <div class="select-block">
+                        <label class="select-name">CURRENCY</label>
+                        <select class="select-panel">
+                          <option>ETH</option>
+                          <option>ETH</option>
+                        </select>
+                      </div>
+                      <div class="select-block">
+                        <label class="select-name">CURRENCY</label>
+                        <select class="select-panel">
+                          <option>ETH</option>
+                          <option>ETH</option>
+                        </select>
+                      </div>
+                      <div class="select-block">
+                        <label class="select-name">CURRENCY</label>
+                        <select class="select-panel">
+                          <option>ETH</option>
+                          <option>ETH</option>
+                        </select>
+                      </div>
+                      <div class="select-block">
+                        <label class="select-name">CURRENCY</label>
+                        <select class="select-panel">
+                          <option>ETH</option>
+                          <option>ETH</option>
+                        </select>
+                      </div>
+                      <div class="select-block">
+                        <label class="select-name">CURRENCY</label>
+                        <select class="select-panel">
+                          <option>ETH</option>
+                          <option>ETH</option>
+                        </select>
                       </div>
                     </div>
+                    <!--div.zoom
+                    label.zoom-title zoom
+                    div.zoom-panel
+                      span.zoom-btn 1m
+                      span.zoom-btn.active 3m
+                      span.zoom-btn 6m
+                      span.zoom-btn YTD
+                      span.zoom-btn.inactive 1y
+                      span.zoom-btn All
+                    
+                    -->
+                    <!--div.date
+                    div.date-from
+                      label.date-title from
+                      input.date-field(value='Sep 27, 2017')
+                    div.date-to
+                      label.date-title to
+                      input.date-field(value='Dec 27, 2017')
+                    
+                    -->
                   </div>
-                  <div class="content-block__body graph scroll">
-                    <div class="lines">ГРАФИК</div>
-                  </div>
+                  <div class="content-block__body" style="height: 434px">Enter a code or upload your algorithm file</div>
                 </div>
               </div>
               <div class="tab-pane fade" id="started" role="tabpanel" aria-labelledby="started-tab">...</div>
@@ -75,11 +123,11 @@
           </div>
           <div class="content-block">
             <ul class="nav nav-tabs" id="investTable" role="tablist">
-              <li class="nav-item"><a class="nav-link active" id="investments-tab" data-toggle="tab" href="#investments" role="tab" aria-controls="investments" aria-selected="true">Investments</a></li>
-              <li class="nav-item"><a class="nav-link" id="history-tab" data-toggle="tab" href="#history" role="tab" aria-controls="history" aria-selected="false">History</a></li>
+              <li class="nav-item"><a class="nav-link" id="investments-tab" data-toggle="tab" href="#investments" role="tab" aria-controls="investments" aria-selected="true">Investments</a></li>
+              <li class="nav-item"><a class="nav-link active" id="history-tab" data-toggle="tab" href="#history" role="tab" aria-controls="history" aria-selected="false">History</a></li>
             </ul>
             <div class="tab-content" id="investTableContent">
-              <div class="tab-pane fade show active" id="investments" role="tabpanel" aria-labelledby="investments-tab">
+              <div class="tab-pane fade" id="investments" role="tabpanel" aria-labelledby="investments-tab">
                 <div class="tab-table">
                   <table>
                     <thead>
@@ -111,7 +159,7 @@
                   </table>
                 </div>
               </div>
-              <div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="history-tab">
+              <div class="tab-pane show active" id="history" role="tabpanel" aria-labelledby="history-tab">
                 <div class="tab-table">
                   <table>
                     <thead>

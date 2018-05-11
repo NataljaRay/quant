@@ -21,10 +21,41 @@ block body
             #testingPlatformContent.tab-content
               #testing.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='testing-tab')
                 div.content-title
-                  p Portfolio Dynamics
+                  p Standard MACD strategy
                 div.content-block
-                  div.content-block__head
-                    div.zoom
+                  div.content-block__head(style="height: 84px")
+                    div
+                      div.select-block
+                        label.select-name CURRENCY
+                        select.select-panel
+                          option ETH
+                          option ETH
+                      div.select-block
+                        label.select-name CURRENCY
+                        select.select-panel
+                          option ETH
+                          option ETH
+                      div.select-block
+                        label.select-name CURRENCY
+                        select.select-panel
+                          option ETH
+                          option ETH
+                      div.select-block
+                        label.select-name CURRENCY
+                        select.select-panel
+                          option ETH
+                          option ETH
+                      div.select-block
+                        label.select-name CURRENCY
+                        select.select-panel
+                          option ETH
+                          option ETH
+                      div.select-block
+                        label.select-name CURRENCY
+                        select.select-panel
+                          option ETH
+                          option ETH
+                    //div.zoom
                       label.zoom-title zoom
                       div.zoom-panel
                         span.zoom-btn 1m
@@ -34,7 +65,7 @@ block body
                         span.zoom-btn.inactive 1y
                         span.zoom-btn All
 
-                    div.date
+                    //div.date
                       div.date-from
                         label.date-title from
                         input.date-field(value='Sep 27, 2017')
@@ -42,8 +73,10 @@ block body
                         label.date-title to
                         input.date-field(value='Dec 27, 2017')
 
-                  div.content-block__body.graph.scroll
-                    div.lines ГРАФИК
+                  div.content-block__body(style="height: 434px") Enter a code or upload your algorithm file
+
+
+
               #started.tab-pane.fade(role='tabpanel', aria-labelledby='started-tab') ...
 
 
@@ -54,12 +87,12 @@ block body
           div.content-block
             ul#investTable.nav.nav-tabs(role='tablist')
               li.nav-item
-                a#investments-tab.nav-link.active(data-toggle='tab', href='#investments', role='tab', aria-controls='investments', aria-selected='true') Investments
+                a#investments-tab.nav-link(data-toggle='tab', href='#investments', role='tab', aria-controls='investments', aria-selected='true') Investments
               li.nav-item
-                a#history-tab.nav-link(data-toggle='tab', href='#history', role='tab', aria-controls='history', aria-selected='false') History
+                a#history-tab.nav-link.active(data-toggle='tab', href='#history', role='tab', aria-controls='history', aria-selected='false') History
 
             #investTableContent.tab-content
-              #investments.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='investments-tab')
+              #investments.tab-pane.fade(role='tabpanel', aria-labelledby='investments-tab')
                 .tab-table
                   table
                     thead
@@ -84,7 +117,7 @@ block body
                         td BTC
                         td 2018-01-03 16:00:56
                         td.fail -4.11%
-              #history.tab-pane.fade(role='tabpanel', aria-labelledby='history-tab')
+              #history.tab-pane.show.active(role='tabpanel', aria-labelledby='history-tab')
                 .tab-table
                   table
                     thead
