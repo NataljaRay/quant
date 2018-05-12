@@ -41,3 +41,16 @@
   src:  local("SF-Pro-Text-Bold"),
   url('../fonts/SF-Pro-Text/SF-Pro-Text-Bold.otf') format('opentype');
 }
+
+
+// inconsolata
+@font-face {
+  font-family: 'Inconsolata-Bold';
+  src:  local("Inconsolata-Bold"),
+  url('../fonts/Inconsolata-Bold.ttf') format('opentype');
+}
+@font-face {
+  font-family: 'Inconsolata-Regular';
+  src:  local("Inconsolata-Regular"),
+  url('../fonts/Inconsolata-Regular.ttf') format('opentype');
+}

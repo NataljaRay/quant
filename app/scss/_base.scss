@@ -1,6 +1,14 @@
 .success{
   color: $green;
+  &--back{
+    //background: $green;
+    background: #3cbf31;
+  }
 }
 .fail{
   color: $red;
+  &--back{
+    //background: $red;
+    background:  #bf3131;
+  }
 }

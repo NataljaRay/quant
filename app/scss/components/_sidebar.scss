@@ -52,10 +52,7 @@
     display: inline-block;
     margin: 0 12px;
   }
-  &-title{
-    font-family: $font-SF-Pro-Text-Bold;
-    color: $blue;
-  }
+
 
   &-dropdown{
     padding: 0;
@@ -96,6 +93,10 @@
     height: 52px;
     display: flex;
     align-items: center;
+    .item-title{
+      font-family: $font-SF-Pro-Text-Bold;
+      color: $blue;
+    }
     li{
       //padding-left: 60px;
       margin-left: -4px;

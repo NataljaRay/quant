@@ -28,7 +28,10 @@
     opacity: .85;
   }
 
-
+  &--red{
+    background-color: #bf3131;
+    border-color: #bf3131;
+  }
   &--blue{
     background-color: $blue;
     border-color: $blue;

@@ -1,0 +1,220 @@
+extends layout/main-layout
+
+block body
+
+  block header
+    include includes/header
+
+  block content
+    section.section.screen-1
+      include includes/platform-sidebar
+
+      div.content.platform
+        div.content-tabs-block
+          div.tab-block
+            ul#testingPlatform.nav.nav-tabs(role='tablist')
+              li.nav-item
+                a#testing-tab.nav-link.active(data-toggle='tab', href='#testing', role='tab', aria-controls='testing', aria-selected='true') Testing Platform
+              li.nav-item
+                a#started-tab.nav-link(data-toggle='tab', href='#started', role='tab', aria-controls='started', aria-selected='false') Get Started
+
+          #testingPlatformContent.tab-content
+            #testing.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='testing-tab')
+
+              div.tab-pane-wrapper
+                div.content-main
+                  div.content-title
+                    p Standard MACD strategy
+                  div.content-block
+                    div.content-block__head
+                      div.select-block-wrapper.inactive
+                        div.select-block
+                          label.select-name EXCHANGE
+                          select.select-panel(disabled)
+                            option Select
+                            option Select
+                        div.select-block
+                          label.select-name CURRENCY
+                          select.select-panel(disabled)
+                            option QNT
+                            option QNT
+                        div.select-block
+                          label.select-name ASSET
+                          select.select-panel(disabled)
+                            option Select
+                            option Select
+                        div.select-block
+                          label.select-name START DATE
+                          select.select-panel(disabled)
+                            option 09/17/2018
+                            option 09/17/2018
+                        div.select-block
+                          label.select-name END DATE
+                          select.select-panel(disabled)
+                            option 10/25/2018
+                            option 10/25/2018
+                        div.select-block
+                          label.select-name TIME FRAME
+                          select.select-panel(disabled)
+                            option 1 hour
+                            option 2 hour
+
+
+                    div.content-block__body
+                      div.code
+                        code 123
+
+
+
+
+                  div.content-block.content-block--no-shadow
+                    div.buttons-block
+                      div.upload
+                        a.button.button--trans-blue.noborder#addSertificate(href='javascript:;') + Upload New File
+                          input(type='file', name='file_source', size='40', onchange='$("#upload-file-info").html($(this).val());')
+                        //div.upload-info-wrapper
+                          div.upload-info
+                            div#upload-file-info.label.label-info IMG656566664_8310.jpg
+                            div#upload-file-info-size.label.label-info-size 3.2 Mb
+                          span.icon-close
+
+                      button.button.button--blue Save Changes
+
+
+
+                  div.content-block.tab-table-block
+                    ul#investTable.nav.nav-tabs(role='tablist')
+                      li.nav-item
+                        a#results-tab.nav-link(data-toggle='tab', href='#results', role='tab', aria-controls='results', aria-selected='true') Results
+                      li.nav-item
+                        a#logs-tab.nav-link(data-toggle='tab', href='#logs', role='tab', aria-controls='logs', aria-selected='true') Logs
+                      li.nav-item
+                        a#history-tab.nav-link.active(data-toggle='tab', href='#history', role='tab', aria-controls='history', aria-selected='false') History
+
+                    #investTableContent.tab-content
+                      #results.tab-pane.fade(role='tabpanel', aria-labelledby='results-tab')
+                        .tab-table
+                          table
+                            thead
+                              th -
+                              th -
+                              th -
+                              th -
+                              th -
+                              th -
+                              th -
+                            tbody
+                              tr
+                                td(colspan="7" style="text-align: center")
+                                  div.content-info
+                                    p No data
+
+                      #logs.tab-pane.fade(role='tabpanel', aria-labelledby='logs-tab')
+                        .tab-table
+                          table
+                            thead
+                              th -
+                              th -
+                              th -
+                              th -
+                              th -
+                              th -
+                              th -
+                            tbody
+                              tr
+                                td(colspan="7" style="text-align: center")
+                                  div.content-info
+                                    p No data
+
+                      #history.tab-pane.show.active(role='tabpanel', aria-labelledby='history-tab')
+                        .tab-table
+                          table
+                            thead
+                              th OPEN ORDER (UTC)
+                              th CLOSED ORDER (UTC)
+                              th EXPOSURE
+                              th ENTRY BALANCE
+                              th EXIT BALANCE
+                              th P&L
+                              th PROFIT, %
+                            tbody
+                              tr
+                                td(colspan="7" style="text-align: center")
+                                  div.content-info
+                                    p No data
+
+
+                div.content-sidebar
+                  div.content-title Backtest Settings
+                  div.content-block
+                    div.content-block__head.content-block__head--thin
+                      label ALGORITHM SETTINGS
+                    div.content-block__body
+                      div.info-block
+                        p short = 10
+                        p long = 21
+                        p signal = 9
+                      div.info-block
+                        p [thresholds]
+                        p down = -0.025
+                        p up = 0.025
+                        p persistence = 1
+
+                    div.content-block__head.content-block__head--thin
+                      label PAPER TRADER SETTINGS
+                    div.content-block__body
+                      div.info-block
+                        p feeMaker = 0.25
+                        p feeTaker = 0.25
+                        p feeUsing = 'maker'
+                        p slippage = 0.05
+                      div.info-block
+                        p [simulationBalance]
+                        p asset = 1
+                        p currency = 100
+
+
+                  div.content-block.content-block--no-shadow
+                    div.buttons-block
+                      button.button.button--blue.inactive New Backtest
+
+
+
+            #started.tab-pane.fade(role='tabpanel', aria-labelledby='started-tab')
+              p No data
+
+
+
+
+  block footer
+    //- footer.footer#contacts footer
+      div.container.container--flex
+
+
+  block modal
+    //- div.modal#modal
+      div.dialog
+        form(method="post" id="ajax_form" action="")
+          //div.message(style="display: none;")
+          div.message.success.translate_me(data-lang="message_success" style="display: none;") Ваша заявка отправлена. Скоро мы свяжемся с Вами!
+          div.message.fail.translate_me(data-lang="message_fail" style="display: none;") Ошибка. Данные не отправлены.
+          div.form
+            div.dialog-header
+              span.close
+            div.dialog-body.translate_me(data-lang="dialog_body")
+              input.dialog-field(type="text" name="name" placeholder="Имя, фамилия" tabindex="1" required="required" autofocus )
+              input.dialog-field(type="text" name="phone" placeholder="Телефон или e-mail" required="required" tabindex="2")
+              textarea.dialog-field(name="letter" placeholder="Введите ваше сообщение" tabindex="3")
+            div.dialog-footer
+              input.button.ru(type="button" class="send" value='Отправить')
+              input.button.en(type="button" class="send" value='Send')
+
+append scripts
+
+
+
+  // анимация при прокрутке
+  //script new WOW().init();
+  //script(src = 'js/telegram-en.js')
+
+

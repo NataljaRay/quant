@@ -12,10 +12,14 @@
 
         .content-block__head{
           height: 84px;
+          border-bottom: 1px solid $border-color;
         }
 
         .content-block__body{
-          min-height: 434px;
+          height: 436px;
+          padding: 16px 23px;
+          overflow-y: auto;
+
         }
 
         .select-block{
@@ -61,12 +65,35 @@
 
       &-sidebar{
         .content-block__body{
-          min-height: 227px;
+          height: 227px;
+          padding: 17px 24px 20px 16px;
+          .info-block{
+            margin-bottom: 24px;
+            &:last-child{
+              margin-bottom: 0;
+            }
+            p{
+              line-height: 15px;
+              padding-bottom: 10px;
+              font-family: $font-Inconsolata-Regular;
+            }
+          }
         }
         .buttons-block{
+          flex-direction: column;
           > *{
             flex:1;
             margin-left: 16px;
+            margin-bottom: 16px;
+
+          }
+
+          .backtest-info{
+            @extend %label;
+            text-align: center;
+            line-height: 1.4;
+            letter-spacing: 0.8px;
+            color: rgba(5, 41, 108, 0.4);
           }
 
 
@@ -83,11 +110,45 @@
     }
   }
 
+  .backtest{
+    line-height: 1.36;
+    letter-spacing: -0.1px;
+    text-align: right;
+    color: rgba(20, 23, 28, 0.4);
+    margin-right: 16px;
+    font-family: $font-SF-Pro-Text-Regular;
+    font-size: 14px;
+    &-date{
+      .date{
+        border-bottom: 2px dotted $blue;
+      }
+      font-family: $font-SF-Pro-Text-Medium;
+      color: $blue;
+
+      line-height: 2;
+      margin-left: 8px;
+      position: relative;
+      &:after{
+        @extend %before-after;
+        background: url(../../img/arrow-down--blue.svg) no-repeat center center;
+        width: 10px;
+        margin-left: 8px;
+      }
+
+    }
+  }
+
 
   .tab-table{
     table{
       th, td {
-        padding: 9px 16px;
+        padding: 9px 15px;
+      }
+      th{
+        color: #2f4268;
+      }
+      td{
+        font-family: $font-SF-Pro-Text-Light;
       }
     }
 

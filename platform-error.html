@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1280, initial-scale=1">
+    <!--meta(name="viewport" content="initial-scale=1")-->
+    <title>Quantor</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/scrollbar/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="/css/all.css">
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+  </head>
+  <body class="main-layout">
+    <header class="header">
+      <div class="container--flex">
+        <div class="header-left"><a class="logo" href="/"><img src="/img/logo.svg"></a>
+          <div class="nav"><a class="nav-link" href="#">Develope</a><a class="nav-link" href="#">Marketplace</a><a class="nav-link" href="#">Learn</a><a class="nav-link" href="#">Contest</a></div>
+        </div>
+        <div class="header-right">
+          <div class="personal-account"><a href="#">investor@gmail.com</a></div>
+        </div>
+      </div>
+    </header>
+    <section class="section screen-1">
+      <div class="sidebar">
+        <div class="sidebar-top">
+          <div class="item item--for-button">
+            <button class="button button--blue">+ New Algorithm</button>
+          </div>
+          <div class="item"><span class="item-icon profile-icon"></span><span class="item-title">Profile</span></div>
+          <div class="item item--child testing is-open"><span class="item-icon testing-icon"></span><span class="item-title testing-title">Testing Platform</span></div>
+          <div class="item--main">
+            <li><a href="#">Standard MACD strategy</a></li>
+          </div>
+        </div>
+      </div>
+      <div class="message-block fail--back">
+        <div class="message">Error<span class="message-close"></span></div>
+      </div>
+      <div class="content platform">
+        <div class="content-tabs-block">
+          <div class="tab-block">
+            <ul class="nav nav-tabs" id="testingPlatform" role="tablist">
+              <li class="nav-item"><a class="nav-link active" id="testing-tab" data-toggle="tab" href="#testing" role="tab" aria-controls="testing" aria-selected="true">Testing Platform</a></li>
+              <li class="nav-item"><a class="nav-link" id="started-tab" data-toggle="tab" href="#started" role="tab" aria-controls="started" aria-selected="false">Get Started</a></li>
+            </ul>
+          </div>
+          <div class="tab-content" id="testingPlatformContent">
+            <div class="tab-pane fade show active" id="testing" role="tabpanel" aria-labelledby="testing-tab">
+              <div class="tab-pane-wrapper">
+                <div class="content-main">
+                  <div class="content-title">
+                    <p>Standard MACD strategy</p>
+                  </div>
+                  <div class="content-block">
+                    <div class="content-block__head">
+                      <div class="select-block-wrapper">
+                        <div class="select-block">
+                          <label class="select-name">EXCHANGE</label>
+                          <select class="select-panel">
+                            <option>Select</option>
+                            <option>Select</option>
+                          </select>
+                        </div>
+                        <div class="select-block">
+                          <label class="select-name">CURRENCY</label>
+                          <select class="select-panel">
+                            <option>QNT</option>
+                            <option>QNT</option>
+                          </select>
+                        </div>
+                        <div class="select-block">
+                          <label class="select-name">ASSET</label>
+                          <select class="select-panel">
+                            <option>Select</option>
+                            <option>Select</option>
+                          </select>
+                        </div>
+                        <div class="select-block">
+                          <label class="select-name">START DATE</label>
+                          <select class="select-panel">
+                            <option>09/17/2018</option>
+                            <option>09/17/2018</option>
+                          </select>
+                        </div>
+                        <div class="select-block">
+                          <label class="select-name">END DATE</label>
+                          <select class="select-panel">
+                            <option>10/25/2018</option>
+                            <option>10/25/2018</option>
+                          </select>
+                        </div>
+                        <div class="select-block">
+                          <label class="select-name">TIME FRAME</label>
+                          <select class="select-panel">
+                            <option>1 hour</option>
+                            <option>2 hour</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="content-block__body">
+                      <div class="code"><code>123</code></div>
+                    </div>
+                  </div>
+                  <div class="content-block content-block--no-shadow">
+                    <div class="buttons-block">
+                      <div class="upload"><a class="button button--trans-blue noborder" id="addSertificate" href="javascript:;">+ Upload New File
+                          <input type="file" name="file_source" size="40" onchange="$(&quot;#upload-file-info&quot;).html($(this).val());"></a>
+                        <!--div.upload-info-wrapper
+                        div.upload-info
+                          div#upload-file-info.label.label-info IMG656566664_8310.jpg
+                          div#upload-file-info-size.label.label-info-size 3.2 Mb
+                        span.icon-close
+                        
+                        -->
+                      </div>
+                      <button class="button button--blue inactive">Save Changes</button>
+                    </div>
+                  </div>
+                  <div class="content-block tab-table-block">
+                    <ul class="nav nav-tabs" id="investTable" role="tablist">
+                      <li class="nav-item"><a class="nav-link" id="results-tab" data-toggle="tab" href="#results" role="tab" aria-controls="results" aria-selected="true">Results</a></li>
+                      <li class="nav-item"><a class="nav-link" id="logs-tab" data-toggle="tab" href="#logs" role="tab" aria-controls="logs" aria-selected="true">Logs</a></li>
+                      <li class="nav-item"><a class="nav-link active" id="history-tab" data-toggle="tab" href="#history" role="tab" aria-controls="history" aria-selected="false">History</a></li>
+                    </ul>
+                    <div class="tab-content" id="investTableContent">
+                      <div class="tab-pane fade" id="results" role="tabpanel" aria-labelledby="results-tab">
+                        <div class="tab-table">
+                          <table>
+                            <thead>
+                              <th>-</th>
+                              <th>-</th>
+                              <th>-</th>
+                              <th>-</th>
+                              <th>-</th>
+                              <th>-</th>
+                              <th>-</th>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td colspan="7" style="text-align: center">
+                                  <div class="content-info">
+                                    <p>No data</p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="logs" role="tabpanel" aria-labelledby="logs-tab">
+                        <div class="tab-table">
+                          <table>
+                            <thead>
+                              <th>-</th>
+                              <th>-</th>
+                              <th>-</th>
+                              <th>-</th>
+                              <th>-</th>
+                              <th>-</th>
+                              <th>-</th>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td colspan="7" style="text-align: center">
+                                  <div class="content-info">
+                                    <p>No data</p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="tab-pane show active" id="history" role="tabpanel" aria-labelledby="history-tab">
+                        <div class="tab-table">
+                          <table>
+                            <thead>
+                              <th>OPEN ORDER (UTC)</th>
+                              <th>CLOSED ORDER (UTC)</th>
+                              <th>EXPOSURE</th>
+                              <th>ENTRY BALANCE</th>
+                              <th>EXIT BALANCE</th>
+                              <th>P&L</th>
+                              <th>PROFIT, %</th>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td colspan="7" style="text-align: center">
+                                  <div class="content-info">
+                                    <p>No data</p>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-sidebar">
+                  <div class="content-title">Backtest Settings</div>
+                  <div class="content-block">
+                    <div class="content-block__head content-block__head--thin">
+                      <label>ALGORITHM SETTINGS</label>
+                    </div>
+                    <div class="content-block__body">
+                      <div class="info-block">
+                        <p>short = 10</p>
+                        <p>long = 21</p>
+                        <p>signal = 9</p>
+                      </div>
+                      <div class="info-block">
+                        <p>[thresholds]</p>
+                        <p>down = -0.025</p>
+                        <p>up = 0.025</p>
+                        <p>persistence = 1</p>
+                      </div>
+                    </div>
+                    <div class="content-block__head content-block__head--thin">
+                      <label>PAPER TRADER SETTINGS</label>
+                    </div>
+                    <div class="content-block__body">
+                      <div class="info-block">
+                        <p>feeMaker = 0.25</p>
+                        <p>feeTaker = 0.25</p>
+                        <p>feeUsing = 'maker'</p>
+                        <p>slippage = 0.05</p>
+                      </div>
+                      <div class="info-block">
+                        <p>[simulationBalance]</p>
+                        <p>asset = 1</p>
+                        <p>currency = 100</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-block content-block--no-shadow">
+                    <div class="buttons-block">
+                      <button class="button button--blue">New Backtest</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="started" role="tabpanel" aria-labelledby="started-tab">
+              <p>No data</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="js/highcharts.js"></script>
+    <script src="/js/script.js"></script>
+    <!-- анимация при прокрутке-->
+    <!--script new WOW().init();-->
+    <!--script(src = 'js/telegram-en.js')-->
+  </body>
+</html>

@@ -1,5 +1,27 @@
 .section{
-  //min-width: 1440px;
+  position: relative;
+
+  .message{
+    color: white;
+    &-block{
+      padding: 7px 0 6px;
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      top: -16px;
+
+    }
+    &-close{
+      display: inline-block;
+      position: absolute;
+      right: 16px;
+      top: 9px;
+      background: url(../../img/message-close.svg) no-repeat center center;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+  }
 }
 
 .screen{

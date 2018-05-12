@@ -20,6 +20,8 @@ $( document ).ready(function() {
   $('.highcharts-point').attr('y', '14')
   $('.highcharts-legend').attr('transform', 'translate(10,185)')
 
-
+    $('.message-close').on('click', function () {
+        $('.message-block').hide();
+    })
 
 });

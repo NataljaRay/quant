@@ -71,7 +71,9 @@
     padding-top: 16px;
     padding-left: 16px;
     height: 52px;
-    display: block;
+    //display: block;
+    @include flex(space-between);
+    align-items: center;
 
   }
 
