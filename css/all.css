@@ -727,6 +727,15 @@ body {
         height: 16px;
         background: #3143bf;
         margin-right: 4px; }
+    .main-layout .platform .content-tabs-block .content-main .info {
+      margin-top: 16px;
+      padding-left: 16px;
+      font-size: 16px;
+      font-family: "SF-Pro-Text-Regular";
+      line-height: 1.81;
+      letter-spacing: -0.1px; }
+      .main-layout .platform .content-tabs-block .content-main .info-header {
+        padding-top: 16px; }
   .main-layout .platform .content-tabs-block .content-sidebar .content-block__body {
     height: 227px;
     padding: 17px 24px 20px 16px; }

@@ -60,6 +60,19 @@
           //display: flex;
           //flex-direction: row-reverse;
         }
+
+
+        .info{
+          margin-top: 16px;
+          padding-left: 16px;
+          font-size: 16px;
+          font-family: $font-SF-Pro-Text-Regular;
+          line-height: 1.81;
+          letter-spacing: -0.1px;
+          &-header{
+            padding-top: 16px;
+          }
+        }
       }
 
 
