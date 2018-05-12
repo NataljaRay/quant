@@ -69,7 +69,8 @@
         align-items: center;
         color: $text-color;
         text-decoration: none;
-        padding-left: 64px;
+        font-family: $font-SF-Pro-Text-Regular;
+        padding-left: 60px;
         &:hover{
           background: rgba(20, 23, 28, 0.01)
         }
@@ -96,11 +97,16 @@
     display: flex;
     align-items: center;
     li{
-      padding-left: 60px;
+      //padding-left: 60px;
+      margin-left: -4px;
     }
     a{
       color: $blue;
       font-family: $font-SF-Pro-Text-Bold;
+      padding-left: 60px;
+      &:hover{
+        text-decoration: none;
+      }
     }
   }
 

@@ -35,6 +35,27 @@
         .select-panel{
           padding: 0 6px;
         }
+
+        .upload{
+          width: auto;
+          a{
+            display: flex;
+            align-items: center;
+          }
+          a:before{
+            @extend %before-after;
+            content: '<>';
+            font-size: 7px;
+            color: white;
+            padding-top: 3px;
+            width: 12px;
+            height: 16px;
+            background: $blue;
+            margin-right: 4px;
+          }
+          //display: flex;
+          //flex-direction: row-reverse;
+        }
       }
 
 
@@ -47,6 +68,8 @@
             flex:1;
             margin-left: 16px;
           }
+
+
         }
       }
     }
@@ -66,6 +89,10 @@
       th, td {
         padding: 9px 16px;
       }
+    }
+
+    .content-info p{
+      padding-top: 33px; padding-bottom: 28px
     }
   }
 }

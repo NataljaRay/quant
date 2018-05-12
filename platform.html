@@ -37,11 +37,13 @@
         </div>
       </div>
       <div class="content platform">
-        <div class="content-tabs-block tab-block">
-          <ul class="nav nav-tabs" id="testingPlatform" role="tablist">
-            <li class="nav-item"><a class="nav-link active" id="testing-tab" data-toggle="tab" href="#testing" role="tab" aria-controls="testing" aria-selected="true">Testing Platform</a></li>
-            <li class="nav-item"><a class="nav-link" id="started-tab" data-toggle="tab" href="#started" role="tab" aria-controls="started" aria-selected="false">Get Started</a></li>
-          </ul>
+        <div class="content-tabs-block">
+          <div class="tab-block">
+            <ul class="nav nav-tabs" id="testingPlatform" role="tablist">
+              <li class="nav-item"><a class="nav-link active" id="testing-tab" data-toggle="tab" href="#testing" role="tab" aria-controls="testing" aria-selected="true">Testing Platform</a></li>
+              <li class="nav-item"><a class="nav-link" id="started-tab" data-toggle="tab" href="#started" role="tab" aria-controls="started" aria-selected="false">Get Started</a></li>
+            </ul>
+          </div>
           <div class="tab-content" id="testingPlatformContent">
             <div class="tab-pane fade show active" id="testing" role="tabpanel" aria-labelledby="testing-tab">
               <div class="tab-pane-wrapper">
@@ -104,43 +106,69 @@
                   </div>
                   <div class="content-block content-block--no-shadow">
                     <div class="buttons-block">
-                      <input value="+ Upload New File">
+                      <div class="upload"><a class="button button--trans-blue noborder" id="addSertificate" href="javascript:;">+ Upload New File
+                          <input type="file" name="file_source" size="40" onchange="$(&quot;#upload-file-info&quot;).html($(this).val());"></a>
+                        <!--div.upload-info-wrapper
+                        div.upload-info
+                          div#upload-file-info.label.label-info IMG656566664_8310.jpg
+                          div#upload-file-info-size.label.label-info-size 3.2 Mb
+                        span.icon-close
+                        
+                        -->
+                      </div>
                       <button class="button button--blue inactive">Save Changes</button>
                     </div>
                   </div>
                   <div class="content-block tab-table-block">
                     <ul class="nav nav-tabs" id="investTable" role="tablist">
-                      <li class="nav-item"><a class="nav-link" id="investments-tab" data-toggle="tab" href="#investments" role="tab" aria-controls="investments" aria-selected="true">Investments</a></li>
+                      <li class="nav-item"><a class="nav-link" id="results-tab" data-toggle="tab" href="#results" role="tab" aria-controls="results" aria-selected="true">Results</a></li>
+                      <li class="nav-item"><a class="nav-link" id="logs-tab" data-toggle="tab" href="#logs" role="tab" aria-controls="logs" aria-selected="true">Logs</a></li>
                       <li class="nav-item"><a class="nav-link active" id="history-tab" data-toggle="tab" href="#history" role="tab" aria-controls="history" aria-selected="false">History</a></li>
                     </ul>
                     <div class="tab-content" id="investTableContent">
-                      <div class="tab-pane fade" id="investments" role="tabpanel" aria-labelledby="investments-tab">
+                      <div class="tab-pane fade" id="results" role="tabpanel" aria-labelledby="results-tab">
                         <div class="tab-table">
                           <table>
                             <thead>
-                              <th>ALGORITHM</th>
-                              <th>UNITS</th>
-                              <th>AMOUNT INVESTED</th>
-                              <th>CURRENCY</th>
-                              <th>TRANSACTION DATE</th>
-                              <th>CHANGE</th>
+                              <th>-</th>
+                              <th>-</th>
+                              <th>-</th>
+                              <th>-</th>
+                              <th>-</th>
+                              <th>-</th>
+                              <th>-</th>
                             </thead>
                             <tbody>
                               <tr>
-                                <td>Beta</td>
-                                <td>2</td>
-                                <td>0.0854</td>
-                                <td>BTC</td>
-                                <td>2018-01-03 16:00:56</td>
-                                <td class="success">+14.34%</td>
+                                <td colspan="7" style="text-align: center">
+                                  <div class="content-info">
+                                    <p>No data</p>
+                                  </div>
+                                </td>
                               </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="logs" role="tabpanel" aria-labelledby="logs-tab">
+                        <div class="tab-table">
+                          <table>
+                            <thead>
+                              <th>-</th>
+                              <th>-</th>
+                              <th>-</th>
+                              <th>-</th>
+                              <th>-</th>
+                              <th>-</th>
+                              <th>-</th>
+                            </thead>
+                            <tbody>
                               <tr>
-                                <td>Alpha</td>
-                                <td>3</td>
-                                <td>2.6564</td>
-                                <td>BTC</td>
-                                <td>2018-01-03 16:00:56</td>
-                                <td class="fail">-4.11%</td>
+                                <td colspan="7" style="text-align: center">
+                                  <div class="content-info">
+                                    <p>No data</p>
+                                  </div>
+                                </td>
                               </tr>
                             </tbody>
                           </table>
@@ -161,7 +189,9 @@
                             <tbody>
                               <tr>
                                 <td colspan="7" style="text-align: center">
-                                  <p style="padding-top: 33px; padding-bottom: 28px">No data</p>
+                                  <div class="content-info">
+                                    <p>No data</p>
+                                  </div>
                                 </td>
                               </tr>
                             </tbody>

@@ -45,7 +45,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   background: transparent;
   list-style: none; }
 
-.main-layout .header .personal-account:after, .main-layout .item.is-open:after {
+.main-layout .header .personal-account:after, .main-layout .item.is-open:after, .main-layout .platform .content-tabs-block .content-main .upload a:before {
   content: '';
   display: inline-block;
   width: 41px;
@@ -374,7 +374,8 @@ body {
       align-items: center;
       color: #14171c;
       text-decoration: none;
-      padding-left: 64px; }
+      font-family: "SF-Pro-Text-Regular";
+      padding-left: 60px; }
       .main-layout .item-dropdown li a:hover {
         background: rgba(20, 23, 28, 0.01); }
   .main-layout .item.is-open:after {
@@ -391,10 +392,13 @@ body {
     display: flex;
     align-items: center; }
     .main-layout .item--main li {
-      padding-left: 60px; }
+      margin-left: -4px; }
     .main-layout .item--main a {
       color: #3143bf;
-      font-family: "SF-Pro-Text-Bold"; }
+      font-family: "SF-Pro-Text-Bold";
+      padding-left: 60px; }
+      .main-layout .item--main a:hover {
+        text-decoration: none; }
   .main-layout .item--child {
     background: transparent;
     border-left-color: transparent;
@@ -668,6 +672,20 @@ body {
           opacity: .2; }
     .main-layout .platform .content-tabs-block .content-main .select-panel {
       padding: 0 6px; }
+    .main-layout .platform .content-tabs-block .content-main .upload {
+      width: auto; }
+      .main-layout .platform .content-tabs-block .content-main .upload a {
+        display: flex;
+        align-items: center; }
+      .main-layout .platform .content-tabs-block .content-main .upload a:before {
+        content: '<>';
+        font-size: 7px;
+        color: white;
+        padding-top: 3px;
+        width: 12px;
+        height: 16px;
+        background: #3143bf;
+        margin-right: 4px; }
   .main-layout .platform .content-tabs-block .content-sidebar .content-block__body {
     min-height: 227px; }
   .main-layout .platform .content-tabs-block .content-sidebar .buttons-block > * {
@@ -683,3 +701,7 @@ body {
 
 .main-layout .platform .tab-table table th, .main-layout .platform .tab-table table td {
   padding: 9px 16px; }
+
+.main-layout .platform .tab-table .content-info p {
+  padding-top: 33px;
+  padding-bottom: 28px; }
