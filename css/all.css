@@ -193,19 +193,51 @@ body {
     background: url(../../img/close.svg) no-repeat center center rgba(5, 41, 108, 0.4);
     background-size: 56%; }
 
-.main-layout .nav-tabs {
+.main-layout .tab-block .nav-tabs .nav-item {
+  padding-top: 4px; }
+  .main-layout .tab-block .nav-tabs .nav-item:first-child .nav-link {
+    border-left: 1px solid #dadadb;
+    border-right: 1px solid transparent; }
+    .main-layout .tab-block .nav-tabs .nav-item:first-child .nav-link.active {
+      border-right: 1px solid #dadadb; }
+  .main-layout .tab-block .nav-tabs .nav-item:last-child .nav-link {
+    border-left: 1px solid transparent;
+    border-right: 1px solid #dadadb; }
+    .main-layout .tab-block .nav-tabs .nav-item:last-child .nav-link.active {
+      border-left: 1px solid #dadadb; }
+
+.main-layout .tab-block .nav-tabs .nav-link {
+  background: #f1f1f1;
+  border: 1px solid #dadadb;
+  border-radius: 0;
+  font-family: "SF-Pro-Text-Bold";
+  color: #14171c;
+  padding: 16px 31px; }
+  .main-layout .tab-block .nav-tabs .nav-link.active {
+    margin-top: -3px;
+    background: white;
+    border-radius: 3px 3px 0 0;
+    border-left: 1px solid #dadadb;
+    border-right: 1px solid #dadadb;
+    border-top-color: #3143bf;
+    border-top-width: 4px;
+    border-bottom: 1px solid white;
+    color: #3143bf;
+    font-family: "SF-Pro-Text-Bold"; }
+
+.main-layout .tab-table-block .nav-tabs {
   padding: 0 16px;
   border-bottom-color: transparent; }
-  .main-layout .nav-tabs--bordered {
+  .main-layout .tab-table-block .nav-tabs--bordered {
     border-bottom-color: rgba(5, 41, 108, 0.1); }
-  .main-layout .nav-tabs .nav-link {
+  .main-layout .tab-table-block .nav-tabs .nav-link {
     border-radius: 0;
     padding: 16px 25px 14px;
     color: #14171c;
     font-family: "SF-Pro-Text-Bold"; }
-    .main-layout .nav-tabs .nav-link:hover {
+    .main-layout .tab-table-block .nav-tabs .nav-link:hover {
       border-color: transparent; }
-    .main-layout .nav-tabs .nav-link.active {
+    .main-layout .tab-table-block .nav-tabs .nav-link.active {
       border-color: transparent;
       background: #f1f1f1;
       border-bottom: 2px solid #3143bf;
@@ -457,6 +489,8 @@ body {
         padding: 9px 16px; }
     .main-layout .content-block__body-wrapper {
       padding: 24px; }
+    .main-layout .content-block--no-shadow {
+      box-shadow: none; }
   .main-layout .content .graph {
     height: 394px; }
     .main-layout .content .graph .lines {
@@ -612,3 +646,40 @@ body {
     width: 100px;
     height: 100px;
     background: grey; }
+
+.main-layout .platform .content-tabs-block {
+  width: 100%; }
+  .main-layout .platform .content-tabs-block .tab-pane-wrapper {
+    display: flex;
+    justify-content: space-between; }
+  .main-layout .platform .content-tabs-block .content-main {
+    flex: 1; }
+    .main-layout .platform .content-tabs-block .content-main .content-block__head {
+      height: 84px; }
+    .main-layout .platform .content-tabs-block .content-main .content-block__body {
+      min-height: 434px; }
+    .main-layout .platform .content-tabs-block .content-main .select-block {
+      width: 15%; }
+      .main-layout .platform .content-tabs-block .content-main .select-block-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between; }
+        .main-layout .platform .content-tabs-block .content-main .select-block-wrapper.inactive > * {
+          opacity: .2; }
+    .main-layout .platform .content-tabs-block .content-main .select-panel {
+      padding: 0 6px; }
+  .main-layout .platform .content-tabs-block .content-sidebar .content-block__body {
+    min-height: 227px; }
+  .main-layout .platform .content-tabs-block .content-sidebar .buttons-block > * {
+    flex: 1;
+    margin-left: 16px; }
+
+.main-layout .platform .buttons-block {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 16px; }
+  .main-layout .platform .buttons-block > * {
+    margin-right: 16px; }
+
+.main-layout .platform .tab-table table th, .main-layout .platform .tab-table table td {
+  padding: 9px 16px; }

@@ -36,210 +36,168 @@
           </div>
         </div>
       </div>
-      <div class="content">
-        <div class="content-main">
-          <div class="content-tabs-block">
-            <ul class="nav nav-tabs" id="testingPlatform" role="tablist">
-              <li class="nav-item"><a class="nav-link active" id="testing-tab" data-toggle="tab" href="#testing" role="tab" aria-controls="testing" aria-selected="true">Testing Platform</a></li>
-              <li class="nav-item"><a class="nav-link" id="started-tab" data-toggle="tab" href="#started" role="tab" aria-controls="started" aria-selected="false">Get Started</a></li>
-            </ul>
-            <div class="tab-content" id="testingPlatformContent">
-              <div class="tab-pane fade show active" id="testing" role="tabpanel" aria-labelledby="testing-tab">
-                <div class="content-title">
-                  <p>Standard MACD strategy</p>
-                </div>
-                <div class="content-block">
-                  <div class="content-block__head" style="height: 84px">
-                    <div>
-                      <div class="select-block">
-                        <label class="select-name">CURRENCY</label>
-                        <select class="select-panel">
-                          <option>ETH</option>
-                          <option>ETH</option>
-                        </select>
-                      </div>
-                      <div class="select-block">
-                        <label class="select-name">CURRENCY</label>
-                        <select class="select-panel">
-                          <option>ETH</option>
-                          <option>ETH</option>
-                        </select>
-                      </div>
-                      <div class="select-block">
-                        <label class="select-name">CURRENCY</label>
-                        <select class="select-panel">
-                          <option>ETH</option>
-                          <option>ETH</option>
-                        </select>
-                      </div>
-                      <div class="select-block">
-                        <label class="select-name">CURRENCY</label>
-                        <select class="select-panel">
-                          <option>ETH</option>
-                          <option>ETH</option>
-                        </select>
-                      </div>
-                      <div class="select-block">
-                        <label class="select-name">CURRENCY</label>
-                        <select class="select-panel">
-                          <option>ETH</option>
-                          <option>ETH</option>
-                        </select>
-                      </div>
-                      <div class="select-block">
-                        <label class="select-name">CURRENCY</label>
-                        <select class="select-panel">
-                          <option>ETH</option>
-                          <option>ETH</option>
-                        </select>
+      <div class="content platform">
+        <div class="content-tabs-block tab-block">
+          <ul class="nav nav-tabs" id="testingPlatform" role="tablist">
+            <li class="nav-item"><a class="nav-link active" id="testing-tab" data-toggle="tab" href="#testing" role="tab" aria-controls="testing" aria-selected="true">Testing Platform</a></li>
+            <li class="nav-item"><a class="nav-link" id="started-tab" data-toggle="tab" href="#started" role="tab" aria-controls="started" aria-selected="false">Get Started</a></li>
+          </ul>
+          <div class="tab-content" id="testingPlatformContent">
+            <div class="tab-pane fade show active" id="testing" role="tabpanel" aria-labelledby="testing-tab">
+              <div class="tab-pane-wrapper">
+                <div class="content-main">
+                  <div class="content-title">
+                    <p>Standard MACD strategy</p>
+                  </div>
+                  <div class="content-block">
+                    <div class="content-block__head">
+                      <div class="select-block-wrapper inactive">
+                        <div class="select-block">
+                          <label class="select-name">EXCHANGE</label>
+                          <select class="select-panel" disabled>
+                            <option>Select</option>
+                            <option>Select</option>
+                          </select>
+                        </div>
+                        <div class="select-block">
+                          <label class="select-name">CURRENCY</label>
+                          <select class="select-panel" disabled>
+                            <option>QNT</option>
+                            <option>QNT</option>
+                          </select>
+                        </div>
+                        <div class="select-block">
+                          <label class="select-name">ASSET</label>
+                          <select class="select-panel" disabled>
+                            <option>Select</option>
+                            <option>Select</option>
+                          </select>
+                        </div>
+                        <div class="select-block">
+                          <label class="select-name">START DATE</label>
+                          <select class="select-panel" disabled>
+                            <option>09/17/2018</option>
+                            <option>09/17/2018</option>
+                          </select>
+                        </div>
+                        <div class="select-block">
+                          <label class="select-name">END DATE</label>
+                          <select class="select-panel" disabled>
+                            <option>10/25/2018</option>
+                            <option>10/25/2018</option>
+                          </select>
+                        </div>
+                        <div class="select-block">
+                          <label class="select-name">TIME FRAME</label>
+                          <select class="select-panel" disabled>
+                            <option>1 hour</option>
+                            <option>2 hour</option>
+                          </select>
+                        </div>
                       </div>
                     </div>
-                    <!--div.zoom
-                    label.zoom-title zoom
-                    div.zoom-panel
-                      span.zoom-btn 1m
-                      span.zoom-btn.active 3m
-                      span.zoom-btn 6m
-                      span.zoom-btn YTD
-                      span.zoom-btn.inactive 1y
-                      span.zoom-btn All
-                    
-                    -->
-                    <!--div.date
-                    div.date-from
-                      label.date-title from
-                      input.date-field(value='Sep 27, 2017')
-                    div.date-to
-                      label.date-title to
-                      input.date-field(value='Dec 27, 2017')
-                    
-                    -->
+                    <div class="content-block__body content--empty">
+                      <div class="content-info">
+                        <p>Enter a code <br> or upload your algorithm file</p>
+                      </div>
+                    </div>
                   </div>
-                  <div class="content-block__body" style="height: 434px">Enter a code or upload your algorithm file</div>
+                  <div class="content-block content-block--no-shadow">
+                    <div class="buttons-block">
+                      <input value="+ Upload New File">
+                      <button class="button button--blue inactive">Save Changes</button>
+                    </div>
+                  </div>
+                  <div class="content-block tab-table-block">
+                    <ul class="nav nav-tabs" id="investTable" role="tablist">
+                      <li class="nav-item"><a class="nav-link" id="investments-tab" data-toggle="tab" href="#investments" role="tab" aria-controls="investments" aria-selected="true">Investments</a></li>
+                      <li class="nav-item"><a class="nav-link active" id="history-tab" data-toggle="tab" href="#history" role="tab" aria-controls="history" aria-selected="false">History</a></li>
+                    </ul>
+                    <div class="tab-content" id="investTableContent">
+                      <div class="tab-pane fade" id="investments" role="tabpanel" aria-labelledby="investments-tab">
+                        <div class="tab-table">
+                          <table>
+                            <thead>
+                              <th>ALGORITHM</th>
+                              <th>UNITS</th>
+                              <th>AMOUNT INVESTED</th>
+                              <th>CURRENCY</th>
+                              <th>TRANSACTION DATE</th>
+                              <th>CHANGE</th>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>Beta</td>
+                                <td>2</td>
+                                <td>0.0854</td>
+                                <td>BTC</td>
+                                <td>2018-01-03 16:00:56</td>
+                                <td class="success">+14.34%</td>
+                              </tr>
+                              <tr>
+                                <td>Alpha</td>
+                                <td>3</td>
+                                <td>2.6564</td>
+                                <td>BTC</td>
+                                <td>2018-01-03 16:00:56</td>
+                                <td class="fail">-4.11%</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="tab-pane show active" id="history" role="tabpanel" aria-labelledby="history-tab">
+                        <div class="tab-table">
+                          <table>
+                            <thead>
+                              <th>OPEN ORDER (UTC)</th>
+                              <th>CLOSED ORDER (UTC)</th>
+                              <th>EXPOSURE</th>
+                              <th>ENTRY BALANCE</th>
+                              <th>EXIT BALANCE</th>
+                              <th>P&L</th>
+                              <th>PROFIT, %</th>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td colspan="7" style="text-align: center">
+                                  <p style="padding-top: 33px; padding-bottom: 28px">No data</p>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-sidebar">
+                  <div class="content-title">Backtest Settings</div>
+                  <div class="content-block">
+                    <div class="content-block__head content-block__head--thin">
+                      <label>ALGORITHM SETTINGS</label>
+                    </div>
+                    <div class="content-block__body"></div>
+                    <div class="content-block__head content-block__head--thin">
+                      <label>PAPER TRADER SETTINGS</label>
+                    </div>
+                    <div class="content-block__body"></div>
+                  </div>
+                  <div class="content-block content-block--no-shadow">
+                    <div class="buttons-block">
+                      <button class="button button--blue inactive">New Backtest</button>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="tab-pane fade" id="started" role="tabpanel" aria-labelledby="started-tab">...</div>
             </div>
-          </div>
-          <div class="content-block">
-            <ul class="nav nav-tabs" id="investTable" role="tablist">
-              <li class="nav-item"><a class="nav-link" id="investments-tab" data-toggle="tab" href="#investments" role="tab" aria-controls="investments" aria-selected="true">Investments</a></li>
-              <li class="nav-item"><a class="nav-link active" id="history-tab" data-toggle="tab" href="#history" role="tab" aria-controls="history" aria-selected="false">History</a></li>
-            </ul>
-            <div class="tab-content" id="investTableContent">
-              <div class="tab-pane fade" id="investments" role="tabpanel" aria-labelledby="investments-tab">
-                <div class="tab-table">
-                  <table>
-                    <thead>
-                      <th>ALGORITHM</th>
-                      <th>UNITS</th>
-                      <th>AMOUNT INVESTED</th>
-                      <th>CURRENCY</th>
-                      <th>TRANSACTION DATE</th>
-                      <th>CHANGE</th>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Beta</td>
-                        <td>2</td>
-                        <td>0.0854</td>
-                        <td>BTC</td>
-                        <td>2018-01-03 16:00:56</td>
-                        <td class="success">+14.34%</td>
-                      </tr>
-                      <tr>
-                        <td>Alpha</td>
-                        <td>3</td>
-                        <td>2.6564</td>
-                        <td>BTC</td>
-                        <td>2018-01-03 16:00:56</td>
-                        <td class="fail">-4.11%</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-              <div class="tab-pane show active" id="history" role="tabpanel" aria-labelledby="history-tab">
-                <div class="tab-table">
-                  <table>
-                    <thead>
-                      <th>OPERATION</th>
-                      <th>AMOUNT</th>
-                      <th>CURRENCY</th>
-                      <th>BALANCE</th>
-                      <th>ALGORITHM</th>
-                      <th>DATE</th>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Deposit</td>
-                        <td>2.9577</td>
-                        <td>QNT</td>
-                        <td>12.4563</td>
-                        <td>Beta</td>
-                        <td>2017-12-23 16:00:56</td>
-                      </tr>
-                      <tr>
-                        <td>Withdraw</td>
-                        <td>3.0032</td>
-                        <td>QNT</td>
-                        <td>9.4531</td>
-                        <td>Beta</td>
-                        <td>2018-01-14 08:12:56</td>
-                      </tr>
-                      <tr>
-                        <td>Deposit</td>
-                        <td>0.9000</td>
-                        <td>ETH</td>
-                        <td>0.9000</td>
-                        <td>Alpha</td>
-                        <td>2017-12-23 16:00:56</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
+            <div class="tab-pane fade" id="started" role="tabpanel" aria-labelledby="started-tab">
+              <p>No data</p>
             </div>
-          </div>
-        </div>
-        <div class="content-sidebar">
-          <div class="content-title">Backtest Settings</div>
-          <div class="content-block">
-            <div class="content-block__head content-block__head--thin">
-              <label>ALGORITHM SETTINGS</label>
-            </div>
-            <div class="content-block__body" style="height: 227px"></div>
-            <div class="content-block__head content-block__head--thin">
-              <label>PAPER TRADER SETTINGS</label>
-            </div>
-            <div class="content-block__body" style="height: 227px"></div>
           </div>
         </div>
       </div>
     </section>
-    <!--footer.footer#contacts footer
-    div.container.container--flex
-    
-    
-    -->
-    <!--div.modal#modal
-    div.dialog
-      form(method="post" id="ajax_form" action="")
-        //div.message(style="display: none;")
-        div.message.success.translate_me(data-lang="message_success" style="display: none;") Ваша заявка отправлена. Скоро мы свяжемся с Вами!
-        div.message.fail.translate_me(data-lang="message_fail" style="display: none;") Ошибка. Данные не отправлены.
-        div.form
-          div.dialog-header
-            span.close
-          div.dialog-body.translate_me(data-lang="dialog_body")
-            input.dialog-field(type="text" name="name" placeholder="Имя, фамилия" tabindex="1" required="required" autofocus )
-            input.dialog-field(type="text" name="phone" placeholder="Телефон или e-mail" required="required" tabindex="2")
-            textarea.dialog-field(name="letter" placeholder="Введите ваше сообщение" tabindex="3")
-          div.dialog-footer
-            input.button.ru(type="button" class="send" value='Отправить')
-            input.button.en(type="button" class="send" value='Send')
-    
-    -->
     <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>

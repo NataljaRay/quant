@@ -1,36 +1,90 @@
-.nav{
-  &-tabs{
-    padding: 0 16px;
-    border-bottom-color: transparent;
 
-    &--bordered{
-      border-bottom-color: rgba(5, 41, 108, 0.1);
-    }
-    .nav-link{
-      border-radius: 0;
-      padding: 16px 25px 14px;
-      color: $text-color;
-      // без этого счачет вкладка
-      font-family: $font-SF-Pro-Text-Bold;
+// большие табы
+.tab-block{
+  .nav-tabs .nav-item{
+    padding-top: 4px;
 
-
-      &:hover{
-        border-color: transparent;
-      }
+    &:first-child .nav-link{
+      border-left: 1px solid $border-color;
+      border-right: 1px solid transparent;
 
       &.active{
-        border-color: transparent;
-        background: $background;
-        border-bottom: 2px solid $blue;
-        color: $blue;
-        font-family: $font-SF-Pro-Text-Bold;
-
+        border-right: 1px solid $border-color;
+      }
+    }
+    &:last-child .nav-link{
+      border-left: 1px solid transparent;
+      border-right: 1px solid $border-color;
+      &.active{
+        border-left: 1px solid $border-color;
       }
     }
 
+  }
+  .nav-tabs .nav-link{
+    background: $background;
+    border: 1px solid $border-color;
+    border-radius: 0;
+    font-family: $font-SF-Pro-Text-Bold;
+    color: $text-color;
+    padding: 16px 31px;
 
+
+    &.active{
+      margin-top: -3px;
+      background: white;
+      border-radius: 3px 3px 0 0;
+      border-left: 1px solid $border-color;
+      border-right: 1px solid $border-color;
+
+      border-top-color: $blue;
+      border-top-width: 4px;
+      border-bottom: 1px solid white;
+      color: $blue;
+      font-family: $font-SF-Pro-Text-Bold;
+    }
+  }
+
+
+}
+
+// основные табы с таблицей
+.tab-table-block{
+  .nav{
+    &-tabs{
+      padding: 0 16px;
+      border-bottom-color: transparent;
+
+      &--bordered{
+        border-bottom-color: rgba(5, 41, 108, 0.1);
+      }
+      .nav-link{
+        border-radius: 0;
+        padding: 16px 25px 14px;
+        color: $text-color;
+        // без этого счачет вкладка
+        font-family: $font-SF-Pro-Text-Bold;
+
+
+        &:hover{
+          border-color: transparent;
+        }
+
+        &.active{
+          border-color: transparent;
+          background: $background;
+          border-bottom: 2px solid $blue;
+          color: $blue;
+          font-family: $font-SF-Pro-Text-Bold;
+
+        }
+      }
+
+
+    }
   }
 }
+
 .tab{
   &-content{}
   &-wrapper{

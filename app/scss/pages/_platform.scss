@@ -1,0 +1,71 @@
+.platform {
+  .content-tabs-block {
+    width: 100%;
+
+    .tab-pane-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+    .content{
+      &-main{
+        flex: 1;
+
+        .content-block__head{
+          height: 84px;
+        }
+
+        .content-block__body{
+          min-height: 434px;
+        }
+
+        .select-block{
+          width: 15%;
+
+          &-wrapper{
+            width: 100%;
+            @include flex(space-between);
+
+            &.inactive{
+              > *{
+                opacity: .2;
+              }
+            }
+          }
+        }
+        .select-panel{
+          padding: 0 6px;
+        }
+      }
+
+
+      &-sidebar{
+        .content-block__body{
+          min-height: 227px;
+        }
+        .buttons-block{
+          > *{
+            flex:1;
+            margin-left: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .buttons-block{
+    @include flex(flex-end);
+    padding-bottom: 16px;
+    > *{
+      margin-right: 16px;
+    }
+  }
+
+
+  .tab-table{
+    table{
+      th, td {
+        padding: 9px 16px;
+      }
+    }
+  }
+}
