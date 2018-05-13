@@ -228,6 +228,35 @@
     }
   }
 
+  &-title{
+    &__name{
+      width: 100%;
+      display: flex;
+    }
+    &__name-change{
+      line-height: 24px;
+      width: auto;
+      min-width: 314px;
+      border: none;
+      border-bottom-color: transparent;
+      margin-right: 8px;
+      &:focus{
+        border-bottom: 1px solid $border-color;
+        outline: none;
+        color: rgba(20, 23, 28, 0.6);
+        & + .button{
+          display: block;
+        }
+      }
+
+      & + .button{
+        padding: 5px 41px 5px;
+        display: none;
+      }
+
+    }
+
+  }
 
 
 }

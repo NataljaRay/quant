@@ -24,47 +24,59 @@ block body
               div.tab-pane-wrapper
                 div.content-main
                   div.content-title
+                    //p Standard MACD strategy
                     div.content-title__name
                       input.content-title__name-change(type='text' value='Standard MACD strategy' )
                       button.button.button--blue Save
+                    div.backtest Backtest:
+                      span.backtest-date
+                        span.date 09/17/2018
                   div.content-block
                     div.content-block__head
-                      div.select-block-wrapper.inactive
+                      div.select-block-wrapper
+                        //div.custom-select-block
+                          label.custom-select-name EXCHANGE
+                          div.custom-select-panel Select
+                          div.custom-select-dropdown
+                            li 1
+                            li 1
+                            li 1
                         div.select-block
                           label.select-name EXCHANGE
-                          select.select-panel(disabled)
+                          select.select-panel
                             option Select
                             option Select
                         div.select-block
                           label.select-name CURRENCY
-                          select.select-panel(disabled)
+                          select.select-panel
                             option QNT
                             option QNT
                         div.select-block
                           label.select-name ASSET
-                          select.select-panel(disabled)
+                          select.select-panel
                             option Select
                             option Select
                         div.select-block
                           label.select-name START DATE
-                          select.select-panel(disabled)
+                          select.select-panel
                             option 09/17/2018
                             option 09/17/2018
                         div.select-block
                           label.select-name END DATE
-                          select.select-panel(disabled)
+                          select.select-panel
                             option 10/25/2018
                             option 10/25/2018
                         div.select-block
                           label.select-name TIME FRAME
-                          select.select-panel(disabled)
+                          select.select-panel
                             option 1 hour
                             option 2 hour
 
 
-                    div.content-block__body.content--empty
-                      div.content-info
-                        p Enter a code <br> or upload your algorithm file
+                    div.content-block__body
+                      div.code
+                        code 123
+
 
 
 
@@ -140,9 +152,29 @@ block body
                               th PROFIT, %
                             tbody
                               tr
-                                td(colspan="7" style="text-align: center")
-                                  div.content-info
-                                    p No data
+                                td January 11, 2017
+                                td January 11, 2017
+                                td 8 hours
+                                td 1024.7
+                                td 893.002
+                                td 131.7
+                                td - 12.85
+                              tr
+                                td January 12, 2017
+                                td January 18, 2017
+                                td 6 days
+                                td 888.108
+                                td 954.522
+                                td 66.41
+                                td 7.48
+                              tr
+                                td January 18, 2017
+                                td January 19, 2017
+                                td 4 hours
+                                td 942.191
+                                td 941.177
+                                td 1.01
+                                td - 0.11
 
 
                 div.content-sidebar
@@ -151,13 +183,35 @@ block body
                     div.content-block__head.content-block__head--thin
                       label ALGORITHM SETTINGS
                     div.content-block__body
+                      div.info-block
+                        p short = 10
+                        p long = 21
+                        p signal = 9
+                      div.info-block
+                        p [thresholds]
+                        p down = -0.025
+                        p up = 0.025
+                        p persistence = 1
+
                     div.content-block__head.content-block__head--thin
                       label PAPER TRADER SETTINGS
                     div.content-block__body
+                      div.info-block
+                        p feeMaker = 0.25
+                        p feeTaker = 0.25
+                        p feeUsing = 'maker'
+                        p slippage = 0.05
+                      div.info-block
+                        p [simulationBalance]
+                        p asset = 1
+                        p currency = 100
+
 
                   div.content-block.content-block--no-shadow
                     div.buttons-block
                       button.button.button--blue.inactive New Backtest
+                      div.backtest-info IN THE BACKTESTING PROGRESS
+                      button.button.button--red Delete This Backtest
 
 
 
@@ -191,8 +245,6 @@ block body
               input.button.en(type="button" class="send" value='Send')
 
 append scripts
-
-
 
   // анимация при прокрутке
   //script new WOW().init();

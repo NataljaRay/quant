@@ -1,0 +1,45 @@
+
+.custom-select{
+  &-block{
+    background: white;
+    box-shadow: 0 12px 24px 0 rgba(5, 41, 107, 0.09);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    outline: none!important;
+
+    &:focus,
+    &:active{
+      outline: none!important;
+    }
+  }
+  &-name{
+    @extend %label;
+    margin-bottom: 8px;
+  }
+  &-panel{
+    background: transparent;
+    border: 1px solid $blue;
+    border-radius: 3px;
+    height: 36px;
+    line-height: 14px;
+    padding: 0 6px;
+    font-family: $font-SF-Pro-Text-Regular;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  &-dropdown{
+    padding-top: 15px;
+    position: relative;
+    //top: 36px;
+    //left: 0;
+    width: 100%;
+    background: grey;
+    li{
+      padding: 12px 6px;
+    }
+  }
+
+}

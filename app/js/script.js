@@ -14,6 +14,10 @@
 })(jQuery);
 
 $( document ).ready(function() {
+    // $('.select-block').on('click', function () {
+    //     $(this).addClass('focused');
+    // });
+
   //проверка подключения
   // console.log( "hallo!" );
 
@@ -23,5 +27,20 @@ $( document ).ready(function() {
     $('.message-close').on('click', function () {
         $('.message-block').hide();
     })
+
+    $('select').styler();
+
+
+    // function ToogleClick()
+    // {
+    //     if(click)
+    //     {
+    //         $(this).addClass('focused');
+    //     }
+    //     else
+    //     {
+    //         $(this).removeClass('focused');
+    //     }
+    // }
 
 });
