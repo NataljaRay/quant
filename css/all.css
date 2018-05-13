@@ -288,7 +288,7 @@ body {
   .main-layout .select-block:focus, .main-layout .select-block:active {
     outline: none !important; }
   .main-layout .select-block.focused {
-    background: white;
+    background: white !important;
     box-shadow: 0 12px 24px 0 rgba(5, 41, 107, 0.09); }
 
 .main-layout .select-name {

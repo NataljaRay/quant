@@ -18,6 +18,11 @@ $( document ).ready(function() {
     //     $(this).addClass('focused');
     // });
 
+    $('.select-block').click(function () {
+        $(this).toggleClass('focused');
+    });
+
+
   //проверка подключения
   // console.log( "hallo!" );
 
@@ -31,16 +36,6 @@ $( document ).ready(function() {
     $('select').styler();
 
 
-    // function ToogleClick()
-    // {
-    //     if(click)
-    //     {
-    //         $(this).addClass('focused');
-    //     }
-    //     else
-    //     {
-    //         $(this).removeClass('focused');
-    //     }
-    // }
 
 });
+
