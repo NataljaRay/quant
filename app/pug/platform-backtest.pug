@@ -211,36 +211,14 @@ block body
               p No data
 
 
-
-
   block footer
-    //- footer.footer#contacts footer
-      div.container.container--flex
 
 
   block modal
-    #deleteBacktestModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
-      .modal-dialog.modal-dialog-centered(role='document')
-        .modal-content
-          .modal-header
-            .oval !
-            p.modal-title Delete 09/17/2018 backtest <br> of «Standard MACD Strategy» algorithm
-            button.close(type='button' data-dismiss='modal' aria-label='Close')
-
-          .modal-body
-            .info THIS CANNOT BE UNDONE!
-          .modal-footer
-            button.button.button--red(type='button') Yes, Delete It
-            button.button.button--trans-blue.noborder(type='button' data-dismiss='modal') Cancel
-
+    include includes/modals
 
 
 append scripts
 
-
-
-  // анимация при прокрутке
-  //script new WOW().init();
-  //script(src = 'js/telegram-en.js')
 
 

@@ -3,7 +3,7 @@
     background-color: rgba(20,23,28,0.9);
   }
   &-content {
-    height: 290px;
+    //height: 290px;
     //width: 400px;
     border-radiuss: 3px;
     background-color: #FFFFFF;
@@ -17,6 +17,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
     padding: 23px 30px 15px;
     border-color: $border-color;
 
@@ -49,6 +50,24 @@
 
 
     }
+
+    .info{
+      @extend %label;
+      padding-top: 9px;
+      padding-bottom: 50px;
+    }
+
+    .content-title{
+      padding: 0;
+      text-align: center;
+
+      &__name-change{
+        border-bottom: 1px solid $border-color;
+        background: transparent;
+        text-align: center;
+        margin-right: 0;
+      }
+    }
   }
 
   &-title{
@@ -68,23 +87,50 @@
       @extend %label;
       color: rgba(5,41,108,0.4)
     }
+
+
+
   }
 
   &-footer{
     justify-content: space-between;
     padding: 0 40px 19px;
     border-color: transparent;
+    position: relative;
+
+    .message{
+      &-block{
+        top: -5px
+      }
+    }
 
     .button{
-      width: 234px;
       padding: 9px 38px;
     }
   }
 }
 
+#deleteBacktestModal{
+  .modal-footer{
+    .button{
+      width: 234px;
+    }
+  }
+}
+#newAlgorithmModal{
+  .modal-footer {
+    justify-content: center;
+    padding: 37px 30px 32px;
+  }
+}
 
 @media (min-width: 576px){
   .modal-dialog {
     max-width: 400px;
+  }
+  #newAlgorithmModal{
+    .modal-dialog {
+      max-width: 480px;
+    }
   }
 }

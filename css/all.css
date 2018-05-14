@@ -60,7 +60,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   height: 10px;
   background: grey; }
 
-.main-layout .modal-body .info, .main-layout .tab-table table thead th, .main-layout .select-name, .main-layout .custom-select-name, .main-layout .content-block__head--thin label, .main-layout .content .zoom-title, .main-layout .content .date-title, .main-layout .content .value-title, .main-layout .quant .info-label, .main-layout .platform .content-tabs-block .content-sidebar .buttons-block .backtest-info {
+.main-layout .modal-header .info, .main-layout .modal-body .info, .main-layout .tab-table table thead th, .main-layout .select-name, .main-layout .custom-select-name, .main-layout .content-block__head--thin label, .main-layout .content .zoom-title, .main-layout .content .date-title, .main-layout .content .value-title, .main-layout .quant .info-label, .main-layout .platform .content-tabs-block .content-sidebar .buttons-block .backtest-info {
   font-family: "SF-Pro-Text-Medium";
   font-size: 10px;
   text-transform: uppercase;
@@ -112,7 +112,6 @@ body {
   background-color: rgba(20, 23, 28, 0.9); }
 
 .main-layout .modal-content {
-  height: 290px;
   border-radiuss: 3px;
   background-color: #FFFFFF;
   box-shadow: 0 2px 14px 0 rgba(5, 41, 107, 0.09); }
@@ -124,6 +123,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   padding: 23px 30px 15px;
   border-color: #dadadb; }
   .main-layout .modal-header .oval {
@@ -148,6 +148,17 @@ body {
     height: 16px;
     background: url(../../img/modal-close.png) no-repeat center center;
     outline: none; }
+  .main-layout .modal-header .info {
+    padding-top: 9px;
+    padding-bottom: 50px; }
+  .main-layout .modal-header .content-title {
+    padding: 0;
+    text-align: center; }
+    .main-layout .modal-header .content-title__name-change {
+      border-bottom: 1px solid #dadadb;
+      background: transparent;
+      text-align: center;
+      margin-right: 0; }
 
 .main-layout .modal-title {
   font-size: 20px;
@@ -165,14 +176,25 @@ body {
 .main-layout .modal-footer {
   justify-content: space-between;
   padding: 0 40px 19px;
-  border-color: transparent; }
+  border-color: transparent;
+  position: relative; }
+  .main-layout .modal-footer .message-block {
+    top: -5px; }
   .main-layout .modal-footer .button {
-    width: 234px;
     padding: 9px 38px; }
+
+.main-layout #deleteBacktestModal .modal-footer .button {
+  width: 234px; }
+
+.main-layout #newAlgorithmModal .modal-footer {
+  justify-content: center;
+  padding: 37px 30px 32px; }
 
 @media (min-width: 576px) {
   .main-layout .modal-dialog {
-    max-width: 400px; } }
+    max-width: 400px; }
+  .main-layout #newAlgorithmModal .modal-dialog {
+    max-width: 480px; } }
 
 .main-layout .button {
   outline: none;
@@ -216,6 +238,24 @@ body {
     cursor: default; }
   .main-layout .button.active {
     opacity: 1; }
+
+.main-layout .message {
+  color: white; }
+  .main-layout .message-block {
+    padding: 7px 0 6px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: -16px; }
+  .main-layout .message-close {
+    display: inline-block;
+    position: absolute;
+    right: 16px;
+    top: 9px;
+    background: url(../../img/message-close.svg) no-repeat center center;
+    width: 16px;
+    height: 16px;
+    cursor: pointer; }
 
 .main-layout .text-field {
   width: 210px;
@@ -718,23 +758,6 @@ body {
 
 .main-layout .section {
   position: relative; }
-  .main-layout .section .message {
-    color: white; }
-    .main-layout .section .message-block {
-      padding: 7px 0 6px;
-      text-align: center;
-      width: 100%;
-      position: absolute;
-      top: -16px; }
-    .main-layout .section .message-close {
-      display: inline-block;
-      position: absolute;
-      right: 16px;
-      top: 9px;
-      background: url(../../img/message-close.svg) no-repeat center center;
-      width: 16px;
-      height: 16px;
-      cursor: pointer; }
 
 .main-layout .screen-1 {
   display: flex; }

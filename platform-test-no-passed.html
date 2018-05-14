@@ -29,7 +29,7 @@
       <div class="sidebar">
         <div class="sidebar-top">
           <div class="item item--for-button">
-            <button class="button button--blue">+ New Algorithm</button>
+            <button class="button button--blue" data-toggle="modal" data-target="#newAlgorithmModal">+ New Algorithm</button>
           </div>
           <div class="item"><span class="item-icon profile-icon"></span><span class="item-title">Profile</span></div>
           <div class="item item--child testing is-open"><span class="item-icon testing-icon"></span><span class="item-title testing-title">Testing Platform</span></div>
@@ -233,6 +233,45 @@
         </div>
       </div>
     </section>
+    <div class="modal fade" id="newAlgorithmModal" tabindex="-1" role="dialog" aria-labelledby="algorithmModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="info">CREATE NEW ALGORITHM</div>
+            <div class="content-title">
+              <div class="content-title__name">
+                <input class="content-title__name-change" type="text" placeholder="Add an algorithm name" autofocus="true">
+              </div>
+            </div>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-footer">
+            <div class="message-block fail--back">
+              <div class="message">Algorithm with this name already exists<span class="message-close"></span></div>
+            </div>
+            <button class="button button--blue inactive" type="button">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="deleteBacktestModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="oval">!</div>
+            <p class="modal-title">Delete 09/17/2018 backtest <br> of «Standard MACD Strategy» algorithm</p>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="info">THIS CANNOT BE UNDONE!</div>
+          </div>
+          <div class="modal-footer">
+            <button class="button button--red" type="button">Yes, Delete It</button>
+            <button class="button button--trans-blue noborder" type="button" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="/assets/formstyler/jquery.formstyler.min.js"></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
@@ -240,8 +279,5 @@
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
     <script src="js/highcharts.js"></script>
     <script src="/js/script.js"></script>
-    <!-- анимация при прокрутке-->
-    <!--script new WOW().init();-->
-    <!--script(src = 'js/telegram-en.js')-->
   </body>
 </html>
