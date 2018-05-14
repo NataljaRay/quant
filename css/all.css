@@ -60,7 +60,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   height: 10px;
   background: grey; }
 
-.main-layout .tab-table table thead th, .main-layout .select-name, .main-layout .custom-select-name, .main-layout .content-block__head--thin label, .main-layout .content .zoom-title, .main-layout .content .date-title, .main-layout .content .value-title, .main-layout .quant .info-label, .main-layout .platform .content-tabs-block .content-sidebar .buttons-block .backtest-info {
+.main-layout .modal-body .info, .main-layout .tab-table table thead th, .main-layout .select-name, .main-layout .custom-select-name, .main-layout .content-block__head--thin label, .main-layout .content .zoom-title, .main-layout .content .date-title, .main-layout .content .value-title, .main-layout .quant .info-label, .main-layout .platform .content-tabs-block .content-sidebar .buttons-block .backtest-info {
   font-family: "SF-Pro-Text-Medium";
   font-size: 10px;
   text-transform: uppercase;
@@ -107,6 +107,72 @@ body {
 .main-layout .mCS-quantor .mCSB_scrollTools {
   background: white;
   opacity: 1 !important; }
+
+.main-layout .modal.fade {
+  background-color: rgba(20, 23, 28, 0.9); }
+
+.main-layout .modal-content {
+  height: 290px;
+  border-radiuss: 3px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 14px 0 rgba(5, 41, 107, 0.09); }
+
+.main-layout .modal-header {
+  height: 164px;
+  background: #f1f1f1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 23px 30px 15px;
+  border-color: #dadadb; }
+  .main-layout .modal-header .oval {
+    box-sizing: border-box;
+    height: 46px;
+    width: 46px;
+    border: 2px solid #f01818;
+    border-radius: 100%;
+    color: #f01818;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    font-family: "SF-Pro-Display-Thin"; }
+  .main-layout .modal-header .close {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    right: 10px;
+    top: 10px;
+    width: 16px;
+    height: 16px;
+    background: url(../../img/modal-close.png) no-repeat center center;
+    outline: none; }
+
+.main-layout .modal-title {
+  font-size: 20px;
+  font-weight: 100;
+  font-family: "SF-Pro-Display-Thin";
+  padding-top: 15px;
+  color: #f01818; }
+
+.main-layout .modal-body {
+  padding: 32px 30px 24px;
+  text-align: center; }
+  .main-layout .modal-body .info {
+    color: rgba(5, 41, 108, 0.4); }
+
+.main-layout .modal-footer {
+  justify-content: space-between;
+  padding: 0 40px 19px;
+  border-color: transparent; }
+  .main-layout .modal-footer .button {
+    width: 234px;
+    padding: 9px 38px; }
+
+@media (min-width: 576px) {
+  .main-layout .modal-dialog {
+    max-width: 400px; } }
 
 .main-layout .button {
   outline: none;

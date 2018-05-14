@@ -1,133 +1,90 @@
 .modal {
-  box-sizing: border-box;
-  position: fixed;
-  z-index: 1000;
-  background: rgba(0,0,0, 0.75);
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  padding: 3rem;
-  display: none;
-}
-.modal.is-open {
-  display: block;
-}
+  &.fade{
+    background-color: rgba(20,23,28,0.9);
+  }
+  &-content {
+    height: 290px;
+    //width: 400px;
+    border-radiuss: 3px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 14px 0 rgba(5, 41, 107, 0.09);
+  }
 
+  &-header {
+    height: 164px;
+    background: $background;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 23px 30px 15px;
+    border-color: $border-color;
 
-//.dialog {
-//  box-sizing: border-box;
-//  width: 70%;
-//  max-width: 100%;
-//  background: #fff;
-//  position: relative;
-//  left: 50%;
-//  transform: translateX(-50%);
-//  border-radius: 5px;
-//  padding: 1rem;
-//}
-.dialog{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  //background: white;
-  width: 977px;
-  padding: 0 100px;
-  box-sizing: border-box;
+    .oval {
+      box-sizing: border-box;
+      height: 46px;
+      width: 46px;
+      border: 2px solid $red;
+      border-radius: 100%;
+      color: $red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 38px;
+      font-family: $font-SF-Pro-Display-Thin;
 
-
-  input{
-    height: 107px;
-    @media screen and (max-device-height: 460px) {
-      height: 42px;
     }
-    @media screen and (device-height: 375px) {
-      height: 22px;
-      padding: 38px 26px;
+
+
+    .close{
+      position: absolute;
+      padding: 0;
+      margin: 0;
+      right: 10px;
+      top: 10px;
+      width: 16px;
+      height: 16px;
+      background: url(../../img/modal-close.png) no-repeat center center;
+      outline: none;
+
+
     }
   }
-  textarea{
-    height: 282px;
-    resize: none;
-    @media screen and (max-device-height: 460px) {
-      height: 172px;
-      padding: 22px 26px;
-      
-    }
-    @media screen and (device-height: 375px) {
-      height: 122px;
-      padding: 22px 26px;
+
+  &-title{
+    font-size: 20px;
+    font-weight: 100;
+    font-family: $font-SF-Pro-Display-Thin;
+    padding-top: 15px;
+    color: $red;
+  }
+
+
+  &-body{
+    padding: 32px 30px 24px;
+    text-align: center;
+
+    .info{
+      @extend %label;
+      color: rgba(5,41,108,0.4)
     }
   }
-  &-field{
-    &:focus{
-      background: rgba(255,255,255,1);
-      @include placeholder(#333);
-      color: #333;
 
-    }
-    outline: none;
-    width: 100%;
-    margin-bottom: 11px;
-
-    @include font($font-Lato-Light, 30px, #fff);
-    @include placeholder(#fff);
-    padding: 42px 26px;
-    box-sizing: border-box;
-
-    background: rgba(255,255,255,.33);
-    border-radius: 10px;
-    border: 1px solid white;
-    box-shadow: none;
-
-  }
-  .close{
-    //background: url('../../img/close.png') no-repeat center center;
-    background: url('../../img/close.svg') no-repeat center center;
-    background-size: contain;
-    width: 14px;
-    height: 14px;
-    display: inline-block;
-    margin-bottom: 26px;
-    cursor: pointer;
-    opacity: .8;
-    &:hover{
-      opacity: 1;
-    }
-  }
-  &-header,
   &-footer{
-    text-align: right;
-  }
-  &-body{}
-  &-footer{
+    justify-content: space-between;
+    padding: 0 40px 19px;
+    border-color: transparent;
+
     .button{
-      @media screen and (device-height: 375px) {
-        height: 22px;
-        padding: 0;
-      }
+      width: 234px;
+      padding: 9px 38px;
     }
-
   }
 }
 
-.message{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  background: white;
-  width: 500px;
-  padding: 50px;
-  box-sizing: border-box;
-  border-radius: 10px;
 
-  &.success{
-    color: green;
-  }
-  &.fail{
-    color: red;
+@media (min-width: 576px){
+  .modal-dialog {
+    max-width: 400px;
   }
 }

@@ -265,7 +265,7 @@
                     <div class="buttons-block">
                       <button class="button button--blue inactive">New Backtest</button>
                       <div class="backtest-info">IN THE BACKTESTING PROGRESS</div>
-                      <button class="button button--red">Delete This Backtest</button>
+                      <button class="button button--red" data-toggle="modal" data-target="#deleteBacktestModal">Delete This Backtest</button>
                     </div>
                   </div>
                 </div>
@@ -278,6 +278,24 @@
         </div>
       </div>
     </section>
+    <div class="modal fade" id="deleteBacktestModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="oval">!</div>
+            <p class="modal-title">Delete 09/17/2018 backtest <br> of «Standard MACD Strategy» algorithm</p>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="info">THIS CANNOT BE UNDONE!</div>
+          </div>
+          <div class="modal-footer">
+            <button class="button button--red" type="button">Yes, Delete It</button>
+            <button class="button button--trans-blue noborder" type="button" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="/assets/formstyler/jquery.formstyler.min.js"></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
