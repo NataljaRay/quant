@@ -27,6 +27,13 @@ block body
                     div.content-title__name
                       input.content-title__name-change(type='text' value='Standard MACD strategy' )
                       button.button.button--blue Save
+                    div.select-block.backtest
+                      span.backtest-title Backtest:
+                      select.select-panel
+                        option 09/17/2018
+                        option 08/31/2018
+                        option 01/29/2018
+                        option 12/22/2017
                     div.backtest Backtest:
                       span.backtest-date
                         span.date 09/17/2018
@@ -42,7 +49,8 @@ block body
                           label.select-name CURRENCY
                           select.select-panel
                             option QNT
-                            option QNT
+                            option ETH
+                            option BTC
                         div.select-block
                           label.select-name ASSET
                           select.select-panel

@@ -132,6 +132,62 @@
     margin-right: 16px;
     font-family: $font-SF-Pro-Text-Regular;
     font-size: 14px;
+
+    flex-direction: row;
+    align-items: center;
+
+    &-title{
+      margin-right: 8px;
+    }
+
+    .select-panel{
+      //height: auto;
+
+      .jq-selectbox{
+        &__select{
+          //height: auto;
+          border-color: transparent;
+          padding: 0;
+          padding-right: 25px;
+          &-text{
+            border-bottom: 2px dotted #3143bf;
+            line-height: 1;
+            padding-top: 10px;
+            font-family: $font-SF-Pro-Text-Medium;
+            color: $blue;
+          }
+
+        }
+
+        &__dropdown{
+          padding-left: 77px;
+          margin-left: -77px;
+          box-shadow: 0 12px 22px 0 rgba(5, 41, 107, 0.09);
+        }
+
+        &__trigger{
+          line-height: 20px;
+          &-arrow{
+            background: url(../../img/arrow-down--blue.svg) no-repeat center center;
+            width: 10px;
+            height: 10px;
+            margin-left: 8px;
+            border: none;
+            margin-top: -2px;
+
+          }
+        }
+
+        li{
+          //margin-left: -69px!important;
+          //padding-left: 0;
+          //padding-right: 20px;
+        }
+      }
+
+
+    }
+
     &-date{
       .date{
         border-bottom: 2px dotted $blue;

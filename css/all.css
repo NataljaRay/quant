@@ -402,7 +402,7 @@ body {
 
 .main-layout .select-panel {
   background: transparent;
-  border-color: #3143bf;
+  border-color: transparent;
   border-radius: 3px;
   height: 36px;
   font-family: "SF-Pro-Text-Regular"; }
@@ -430,6 +430,32 @@ body {
     border-top: 5px solid #000;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent; }
+
+.main-layout .jq-selectbox__dropdown {
+  box-sizing: content-box;
+  box-shadow: none;
+  border: none;
+  background: white;
+  padding: 8px;
+  padding-bottom: 12px;
+  padding-top: 3px;
+  margin-left: -8px;
+  border-radius: 0;
+  box-shadow: 0 12px 24px 0 rgba(5, 41, 107, 0.09); }
+
+.main-layout .jq-selectbox li {
+  padding: 12px 10px 12px;
+  font-family: "SF-Pro-Text-Medium";
+  font-weight: 500;
+  font-size: 14px; }
+  .main-layout .jq-selectbox li:hover {
+    background: #3143bf; }
+  .main-layout .jq-selectbox li.selected {
+    background: white;
+    color: #14171c; }
+    .main-layout .jq-selectbox li.selected:hover {
+      background: #3143bf;
+      color: white; }
 
 .main-layout .custom-select-block {
   background: white;
@@ -938,7 +964,34 @@ body {
     color: rgba(20, 23, 28, 0.4);
     margin-right: 16px;
     font-family: "SF-Pro-Text-Regular";
-    font-size: 14px; }
+    font-size: 14px;
+    flex-direction: row;
+    align-items: center; }
+    .main-layout .platform .backtest-title {
+      margin-right: 8px; }
+    .main-layout .platform .backtest .select-panel .jq-selectbox__select {
+      border-color: transparent;
+      padding: 0;
+      padding-right: 25px; }
+      .main-layout .platform .backtest .select-panel .jq-selectbox__select-text {
+        border-bottom: 2px dotted #3143bf;
+        line-height: 1;
+        padding-top: 10px;
+        font-family: "SF-Pro-Text-Medium";
+        color: #3143bf; }
+    .main-layout .platform .backtest .select-panel .jq-selectbox__dropdown {
+      padding-left: 77px;
+      margin-left: -77px;
+      box-shadow: 0 12px 22px 0 rgba(5, 41, 107, 0.09); }
+    .main-layout .platform .backtest .select-panel .jq-selectbox__trigger {
+      line-height: 20px; }
+      .main-layout .platform .backtest .select-panel .jq-selectbox__trigger-arrow {
+        background: url(../../img/arrow-down--blue.svg) no-repeat center center;
+        width: 10px;
+        height: 10px;
+        margin-left: 8px;
+        border: none;
+        margin-top: -2px; }
     .main-layout .platform .backtest-date {
       font-family: "SF-Pro-Text-Medium";
       color: #3143bf;
