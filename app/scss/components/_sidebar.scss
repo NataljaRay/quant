@@ -40,10 +40,11 @@
   width: 292px;
   height: 52px;
   //background-color: $background;
-  //border-left: 4px solid $blue;
+  border-left: 4px solid transparent;
   display: flex;
   align-items: center;
   border-bottom: 1px solid transparent;
+
 
   &-icon{
     background: black;
@@ -126,6 +127,7 @@
   &--for-button{
     justify-content: center;
     margin-top: 12px;
+    margin-bottom: 12px;
   }
 
 }
@@ -133,7 +135,7 @@
 
 .portfolio{
   &-icon{
-    //background: url(../../img/profile.svg) no-repeat center center;
+    background: url(../../img/testing.svg) no-repeat center center;
   }
 }
 
@@ -146,7 +148,7 @@
 
 .testing{
   &-icon{
-    //background: url(../../img/profile.svg) no-repeat center center;
+    background: url(../../img/testing.svg) no-repeat center center;
   }
   &.is-open{
     &:after{

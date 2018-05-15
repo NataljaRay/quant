@@ -50,6 +50,7 @@
   &-name{
     @extend %label;
     margin-bottom: 8px;
+    z-index: 11;
   }
   &-panel{
     background: transparent;
@@ -111,6 +112,9 @@
 
     box-shadow: 0 12px 24px 0 rgba(5, 41, 107, 0.09);
 
+    padding-top: 65px;
+    margin-top: -65px;
+    z-index: -1;
 
   }
 
@@ -120,15 +124,22 @@
     font-weight: 500;
     font-size: 14px;
     &:hover{
-      background: $blue;
+      //background: $blue;
+      background: white;
+      color: $text-color;
+      text-decoration: underline;
     }
     &.selected{
       //background: $background;
       background: white;
       color: $text-color;
       &:hover{
-        background: $blue;
-        color: white;
+        //background: $blue;
+        //color: white;
+
+
+        background: white;
+        color: $text-color;
       }
     }
   }

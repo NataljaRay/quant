@@ -1,5 +1,9 @@
 .platform {
   padding-top: 9px;
+  .code{
+    height: 500px;
+    background: yellowgreen;
+  }
   .content-tabs-block {
     width: 100%;
 
@@ -14,6 +18,7 @@
         .content-block__head{
           height: 84px;
           border-bottom: 1px solid $border-color;
+          z-index: 10;
         }
 
         .content-block__body{
@@ -136,8 +141,12 @@
     flex-direction: row;
     align-items: center;
 
+    width: 166px!important;
+    z-index: 12;
+
     &-title{
       margin-right: 8px;
+      z-index: 11;
     }
 
     .select-panel{
@@ -163,6 +172,14 @@
           padding-left: 77px;
           margin-left: -77px;
           box-shadow: 0 12px 22px 0 rgba(5, 41, 107, 0.09);
+          padding-right: 28px;
+          padding-top: 45px;
+          margin-top: -45px;
+          z-index: -1;
+        }
+        ul{
+          padding-left: 77px;
+          margin-left: -77px;
         }
 
         &__trigger{
@@ -179,6 +196,8 @@
         }
 
         li{
+          padding: 12px 0 12px;
+          padding-right: 26px;
           //margin-left: -69px!important;
           //padding-left: 0;
           //padding-right: 20px;

@@ -46,6 +46,7 @@
       font-weight: 500;
       letter-spacing: normal;
       margin-bottom: 24px;
+
     }
     &-text{
       //font-family: $font-SF-Pro-Text-Regular;
@@ -115,26 +116,36 @@
       align-items: center;
     }
     &-item{
-      padding: 5px;
+      padding: 8px;
       display: flex;
       justify-content: space-between;
       &-menu{
         float: right;
         font-size: 30px;
-        margin-top: -20px;
+        //margin-top: -20px;
         position: relative;
+        background: url(../../img/course-menu.svg) no-repeat center center;
+        font-size: 0;
+        height: 5px;
+        width: 23px;
+        margin-right: 8px;
 
         &__dropdown{
-          padding: 8px 0;
-          width: 100px;
+          padding: 14px 0;
+          width: 92px;
           position: absolute;
           right: 0;
+          top: 17px;
+          box-shadow: 0 12px 24px 0 rgba(5, 41, 107, 0.09);
+          background: white;
+          z-index: 2;
+
           a{
             text-align: right;
             display: block;
-            padding: 10px 30px;
+            padding: 10px 24px;
             font-size: 14px;
-            font-family: $font-SF-Pro-Text-Regular;
+            font-family: $font-SF-Pro-Text-Medium;
             color: $text-color;
           }
 
@@ -143,16 +154,25 @@
       }
     }
     .content-title{
-      padding-bottom: 0;
-      padding-top: 20px;
+      padding-top: 18px;
+      padding-bottom: 6px;
+      height: 42px;
     }
     .sub-title{
       padding-left: 16px;
     }
     .img{
-      width: 100px;
-      height: 100px;
+      width: 71px;
+      height: 81px;
       background: grey;
+      overflow: hidden;
+      img{
+        width: 100%;
+      }
     }
+  }
+
+  .add-course{
+    text-align: center;
   }
 }

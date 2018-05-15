@@ -18,9 +18,9 @@ $( document ).ready(function() {
     //     $(this).addClass('focused');
     // });
 
-    $('.select-block').click(function () {
-        $(this).toggleClass('focused');
-    });
+    // $('.select-block').click(function () {
+    //     $(this).toggleClass('focused');
+    // });
 
 
   //проверка подключения

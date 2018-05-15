@@ -398,7 +398,8 @@ body {
     box-shadow: 0 12px 24px 0 rgba(5, 41, 107, 0.09); }
 
 .main-layout .select-name {
-  margin-bottom: 8px; }
+  margin-bottom: 8px;
+  z-index: 11; }
 
 .main-layout .select-panel {
   background: transparent;
@@ -441,7 +442,10 @@ body {
   padding-top: 3px;
   margin-left: -8px;
   border-radius: 0;
-  box-shadow: 0 12px 24px 0 rgba(5, 41, 107, 0.09); }
+  box-shadow: 0 12px 24px 0 rgba(5, 41, 107, 0.09);
+  padding-top: 65px;
+  margin-top: -65px;
+  z-index: -1; }
 
 .main-layout .jq-selectbox li {
   padding: 12px 10px 12px;
@@ -449,13 +453,15 @@ body {
   font-weight: 500;
   font-size: 14px; }
   .main-layout .jq-selectbox li:hover {
-    background: #3143bf; }
+    background: white;
+    color: #14171c;
+    text-decoration: underline; }
   .main-layout .jq-selectbox li.selected {
     background: white;
     color: #14171c; }
     .main-layout .jq-selectbox li.selected:hover {
-      background: #3143bf;
-      color: white; }
+      background: white;
+      color: #14171c; }
 
 .main-layout .custom-select-block {
   background: white;
@@ -557,6 +563,7 @@ body {
   position: relative;
   width: 292px;
   height: 52px;
+  border-left: 4px solid transparent;
   display: flex;
   align-items: center;
   border-bottom: 1px solid transparent; }
@@ -614,12 +621,19 @@ body {
       color: #14171c; }
   .main-layout .item--for-button {
     justify-content: center;
-    margin-top: 12px; }
+    margin-top: 12px;
+    margin-bottom: 12px; }
+
+.main-layout .portfolio-icon {
+  background: url(../../img/testing.svg) no-repeat center center; }
 
 .main-layout .profile {
   border-bottom: none; }
   .main-layout .profile-icon {
     background: url(../../img/profile.svg) no-repeat center center; }
+
+.main-layout .testing-icon {
+  background: url(../../img/testing.svg) no-repeat center center; }
 
 .main-layout .testing.is-open:after {
   margin-left: 8px;
@@ -852,38 +866,55 @@ body {
     display: flex;
     align-items: center; }
   .main-layout .quant .sertifacates-item {
-    padding: 5px;
+    padding: 8px;
     display: flex;
     justify-content: space-between; }
     .main-layout .quant .sertifacates-item-menu {
       float: right;
       font-size: 30px;
-      margin-top: -20px;
-      position: relative; }
+      position: relative;
+      background: url(../../img/course-menu.svg) no-repeat center center;
+      font-size: 0;
+      height: 5px;
+      width: 23px;
+      margin-right: 8px; }
       .main-layout .quant .sertifacates-item-menu__dropdown {
-        padding: 8px 0;
-        width: 100px;
+        padding: 14px 0;
+        width: 92px;
         position: absolute;
-        right: 0; }
+        right: 0;
+        top: 17px;
+        box-shadow: 0 12px 24px 0 rgba(5, 41, 107, 0.09);
+        background: white;
+        z-index: 2; }
         .main-layout .quant .sertifacates-item-menu__dropdown a {
           text-align: right;
           display: block;
-          padding: 10px 30px;
+          padding: 10px 24px;
           font-size: 14px;
-          font-family: "SF-Pro-Text-Regular";
+          font-family: "SF-Pro-Text-Medium";
           color: #14171c; }
   .main-layout .quant .sertifacates .content-title {
-    padding-bottom: 0;
-    padding-top: 20px; }
+    padding-top: 18px;
+    padding-bottom: 6px;
+    height: 42px; }
   .main-layout .quant .sertifacates .sub-title {
     padding-left: 16px; }
   .main-layout .quant .sertifacates .img {
-    width: 100px;
-    height: 100px;
-    background: grey; }
+    width: 71px;
+    height: 81px;
+    background: grey;
+    overflow: hidden; }
+    .main-layout .quant .sertifacates .img img {
+      width: 100%; }
+  .main-layout .quant .add-course {
+    text-align: center; }
 
 .main-layout .platform {
   padding-top: 9px; }
+  .main-layout .platform .code {
+    height: 500px;
+    background: yellowgreen; }
   .main-layout .platform .content-tabs-block {
     width: 100%; }
     .main-layout .platform .content-tabs-block .tab-pane-wrapper {
@@ -893,7 +924,8 @@ body {
       flex: 1; }
       .main-layout .platform .content-tabs-block .content-main .content-block__head {
         height: 84px;
-        border-bottom: 1px solid #dadadb; }
+        border-bottom: 1px solid #dadadb;
+        z-index: 10; }
       .main-layout .platform .content-tabs-block .content-main .content-block__body {
         height: 436px;
         padding: 16px 23px;
@@ -966,9 +998,12 @@ body {
     font-family: "SF-Pro-Text-Regular";
     font-size: 14px;
     flex-direction: row;
-    align-items: center; }
+    align-items: center;
+    width: 166px !important;
+    z-index: 12; }
     .main-layout .platform .backtest-title {
-      margin-right: 8px; }
+      margin-right: 8px;
+      z-index: 11; }
     .main-layout .platform .backtest .select-panel .jq-selectbox__select {
       border-color: transparent;
       padding: 0;
@@ -982,7 +1017,14 @@ body {
     .main-layout .platform .backtest .select-panel .jq-selectbox__dropdown {
       padding-left: 77px;
       margin-left: -77px;
-      box-shadow: 0 12px 22px 0 rgba(5, 41, 107, 0.09); }
+      box-shadow: 0 12px 22px 0 rgba(5, 41, 107, 0.09);
+      padding-right: 28px;
+      padding-top: 45px;
+      margin-top: -45px;
+      z-index: -1; }
+    .main-layout .platform .backtest .select-panel .jq-selectbox ul {
+      padding-left: 77px;
+      margin-left: -77px; }
     .main-layout .platform .backtest .select-panel .jq-selectbox__trigger {
       line-height: 20px; }
       .main-layout .platform .backtest .select-panel .jq-selectbox__trigger-arrow {
@@ -992,6 +1034,9 @@ body {
         margin-left: 8px;
         border: none;
         margin-top: -2px; }
+    .main-layout .platform .backtest .select-panel .jq-selectbox li {
+      padding: 12px 0 12px;
+      padding-right: 26px; }
     .main-layout .platform .backtest-date {
       font-family: "SF-Pro-Text-Medium";
       color: #3143bf;
