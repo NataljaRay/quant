@@ -1,40 +1,36 @@
-(function($){
-    $(window).on("load",function(){
-        $(".scroll").mCustomScrollbar({
-            axis:"yx",
-            theme: "quantor"
+(function ($) {
+  $(window).on("load", function () {
+    $(".scroll").mCustomScrollbar({
+      axis: "yx",
+      theme: "quantor"
 
-        });
-        $(".scroll-v").mCustomScrollbar({
-            // axis:"yx",
-            theme: "dark"
-
-        });
     });
+    $(".scroll-v").mCustomScrollbar({
+      // axis:"yx",
+      theme: "quantor"
+
+    });
+  });
 })(jQuery);
 
-$( document ).ready(function() {
-    // $('.select-block').on('click', function () {
-    //     $(this).addClass('focused');
-    // });
-
-    // $('.select-block').click(function () {
-    //     $(this).toggleClass('focused');
-    // });
-
+$(document).ready(function () {
 
   //проверка подключения
   // console.log( "hallo!" );
 
+  $('.sertifacates-item-menu').on('click', function () {
+    $(this).children('.sertifacates-item-menu__dropdown').toggleClass('is-open');
+  });
+
+
   $('.highcharts-point').attr('y', '14')
   $('.highcharts-legend').attr('transform', 'translate(10,185)')
 
-    $('.message-close').on('click', function () {
-        $('.message-block').hide();
-    })
+  $('.message-close').on('click', function () {
+    $('.message-block').hide();
+  })
 
-    $('select').styler();
-
+  $('select').styler();
 
 
 });

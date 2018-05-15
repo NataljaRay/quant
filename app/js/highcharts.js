@@ -1,3 +1,10 @@
+Highcharts.theme = {
+  colors: ['#7cb5ec', '#424348', '#31bfbb']
+};
+
+// Apply the theme
+Highcharts.setOptions(Highcharts.theme);
+
 
 // Build the chart
 Highcharts.chart('container', {

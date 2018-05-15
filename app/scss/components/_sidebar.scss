@@ -13,6 +13,7 @@
   &-block{
     border-top: 1px solid rgba(20, 23, 28, 0.1);
     padding: 24px 40px;
+    //padding-bottom: 30px;
     .button{
       display: flex;
       justify-content: center;
@@ -30,6 +31,7 @@
     font-size: 20px;
     font-family: $font-SF-Pro-Display-Thin;
     margin-top: 16px;
+    margin-bottom: 10px;
   }
 }
 

@@ -121,14 +121,16 @@
       justify-content: space-between;
       &-menu{
         float: right;
-        font-size: 30px;
+        //font-size: 30px;
         //margin-top: -20px;
         position: relative;
         background: url(../../img/course-menu.svg) no-repeat center center;
-        font-size: 0;
+        //font-size: 0;
         height: 5px;
         width: 23px;
         margin-right: 8px;
+        padding: 10px 0;
+        cursor: pointer;
 
         &__dropdown{
           padding: 14px 0;
@@ -139,6 +141,8 @@
           box-shadow: 0 12px 24px 0 rgba(5, 41, 107, 0.09);
           background: white;
           z-index: 2;
+          display: none;
+          transition: .3s;
 
           a{
             text-align: right;
@@ -147,6 +151,12 @@
             font-size: 14px;
             font-family: $font-SF-Pro-Text-Medium;
             color: $text-color;
+          }
+
+
+          &.is-open{
+            display: block;
+            transition: .3s;
           }
 
         }

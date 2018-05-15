@@ -60,7 +60,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   height: 10px;
   background: grey; }
 
-.main-layout .modal-header .info, .main-layout .modal-body .info, .main-layout .tab-table table thead th, .main-layout .select-name, .main-layout .custom-select-name, .main-layout .content-block__head--thin label, .main-layout .content .zoom-title, .main-layout .content .date-title, .main-layout .content .value-title, .main-layout .quant .info-label, .main-layout .platform .content-tabs-block .content-sidebar .buttons-block .backtest-info {
+.main-layout .modal-header .info, .main-layout .modal-body .info, .main-layout .tab-table table thead th, .main-layout .select-name, .main-layout .content-block__head--thin label, .main-layout .content .zoom-title, .main-layout .content .date-title, .main-layout .content .value-title, .main-layout .quant .info-label, .main-layout .platform .content-tabs-block .content-sidebar .buttons-block .backtest-info {
   font-family: "SF-Pro-Text-Medium";
   font-size: 10px;
   text-transform: uppercase;
@@ -85,8 +85,10 @@ body {
   .main-layout .fail--back {
     background: #bf3131; }
 
+.main-layout .scroll-v {
+  padding-right: 0 !important; }
+
 .main-layout .mCS-quantor .mCSB_draggerRail {
-  height: 15px;
   margin: 0;
   background: white; }
 
@@ -96,15 +98,23 @@ body {
   .main-layout .mCS-quantor .mCSB_dragger:focus .mCSB_dragger_bar,
   .main-layout .mCS-quantor .mCSB_dragger:active .mCSB_dragger_bar {
     background: rgba(47, 66, 104, 0.4); }
+  .main-layout .mCS-quantor .mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background: rgba(47, 66, 104, 0.4); }
 
 .main-layout .mCS-quantor .mCSB_dragger_bar {
   background: rgba(47, 66, 104, 0.3);
-  height: 8px !important;
-  margin: 4px auto !important; }
+  width: 8px; }
   .main-layout .mCS-quantor .mCSB_dragger_bar:hover, .main-layout .mCS-quantor .mCSB_dragger_bar:focus, .main-layout .mCS-quantor .mCSB_dragger_bar:active {
     background: rgba(47, 66, 104, 0.4); }
 
-.main-layout .mCS-quantor .mCSB_scrollTools {
+.main-layout .mCS-quantor .mCSB_scrollTools_horizontal .mCSB_draggerRail {
+  height: 15px; }
+
+.main-layout .mCS-quantor .mCSB_scrollTools_horizontal .mCSB_dragger_bar {
+  height: 8px !important;
+  margin: 4px auto !important; }
+
+.main-layout .mCS-quantor .mCSB_scrollTools_horizontal .mCSB_scrollTools {
   background: white;
   opacity: 1 !important; }
 
@@ -396,6 +406,8 @@ body {
   .main-layout .select-block.focused {
     background: white !important;
     box-shadow: 0 12px 24px 0 rgba(5, 41, 107, 0.09); }
+  .main-layout .select-block.min-margin {
+    margin: 0 -8px; }
 
 .main-layout .select-name {
   margin-bottom: 8px;
@@ -463,40 +475,6 @@ body {
       background: white;
       color: #14171c; }
 
-.main-layout .custom-select-block {
-  background: white;
-  box-shadow: 0 12px 24px 0 rgba(5, 41, 107, 0.09);
-  padding: 8px;
-  display: flex;
-  flex-direction: column;
-  outline: none !important; }
-  .main-layout .custom-select-block:focus, .main-layout .custom-select-block:active {
-    outline: none !important; }
-
-.main-layout .custom-select-name {
-  margin-bottom: 8px; }
-
-.main-layout .custom-select-panel {
-  background: transparent;
-  border: 1px solid #3143bf;
-  border-radius: 3px;
-  height: 36px;
-  line-height: 14px;
-  padding: 0 6px;
-  font-family: "SF-Pro-Text-Regular";
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  position: relative; }
-
-.main-layout .custom-select-dropdown {
-  padding-top: 15px;
-  position: relative;
-  width: 100%;
-  background: grey; }
-  .main-layout .custom-select-dropdown li {
-    padding: 12px 6px; }
-
 .main-layout .header {
   background-color: #f1f1f1;
   font-family: "SF-Pro-Text-Medium";
@@ -557,7 +535,8 @@ body {
 .main-layout .text--big {
   font-size: 20px;
   font-family: "SF-Pro-Display-Thin";
-  margin-top: 16px; }
+  margin-top: 16px;
+  margin-bottom: 10px; }
 
 .main-layout .item {
   position: relative;
@@ -871,13 +850,13 @@ body {
     justify-content: space-between; }
     .main-layout .quant .sertifacates-item-menu {
       float: right;
-      font-size: 30px;
       position: relative;
       background: url(../../img/course-menu.svg) no-repeat center center;
-      font-size: 0;
       height: 5px;
       width: 23px;
-      margin-right: 8px; }
+      margin-right: 8px;
+      padding: 10px 0;
+      cursor: pointer; }
       .main-layout .quant .sertifacates-item-menu__dropdown {
         padding: 14px 0;
         width: 92px;
@@ -886,7 +865,9 @@ body {
         top: 17px;
         box-shadow: 0 12px 24px 0 rgba(5, 41, 107, 0.09);
         background: white;
-        z-index: 2; }
+        z-index: 2;
+        display: none;
+        transition: .3s; }
         .main-layout .quant .sertifacates-item-menu__dropdown a {
           text-align: right;
           display: block;
@@ -894,6 +875,9 @@ body {
           font-size: 14px;
           font-family: "SF-Pro-Text-Medium";
           color: #14171c; }
+        .main-layout .quant .sertifacates-item-menu__dropdown.is-open {
+          display: block;
+          transition: .3s; }
   .main-layout .quant .sertifacates .content-title {
     padding-top: 18px;
     padding-bottom: 6px;
@@ -912,9 +896,6 @@ body {
 
 .main-layout .platform {
   padding-top: 9px; }
-  .main-layout .platform .code {
-    height: 500px;
-    background: yellowgreen; }
   .main-layout .platform .content-tabs-block {
     width: 100%; }
     .main-layout .platform .content-tabs-block .tab-pane-wrapper {
