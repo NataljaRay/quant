@@ -170,4 +170,24 @@
       padding-top: 33px; padding-bottom: 28px
     }
   }
+
+  .tab-table-block {
+    .content-block__head {
+      height: 45px!important;
+      border-top: 1px solid #dadadb;
+      border-bottom: none!important;
+    }
+    .content-block__body{
+      height: 334px!important;
+      padding: 0!important;
+    }
+
+
+    .zoom-btn{
+      background: rgba(138,106,228,0.4);
+      &.active{
+        background: #8A6AE4;
+      }
+    }
+  }
 }

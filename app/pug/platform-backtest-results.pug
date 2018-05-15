@@ -1,0 +1,232 @@
+extends layout/main-layout
+
+block body
+
+  block header
+    include includes/header
+
+  block content
+    section.section.screen-1
+      include includes/platform-sidebar
+
+      div.content.platform
+        div.content-tabs-block
+          div.tab-block
+            ul#testingPlatform.nav.nav-tabs(role='tablist')
+              li.nav-item
+                a#testing-tab.nav-link.active(data-toggle='tab', href='#testing', role='tab', aria-controls='testing', aria-selected='true') Testing Platform
+              li.nav-item
+                a#started-tab.nav-link(data-toggle='tab', href='#started', role='tab', aria-controls='started', aria-selected='false') Get Started
+
+          #testingPlatformContent.tab-content
+            #testing.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='testing-tab')
+
+              div.tab-pane-wrapper
+                div.content-main
+                  div.content-title
+                    div.content-title__name
+                      input.content-title__name-change(type='text' value='Standard MACD strategy' )
+                      button.button.button--blue Save
+                    div.backtest Backtest:
+                      span.backtest-date
+                        span.date 09/17/2018
+                  div.content-block
+                    div.content-block__head
+                      div.select-block-wrapper
+                        div.select-block
+                          label.select-name EXCHANGE
+                          select.select-panel
+                            option Select
+                            option Select
+                        div.select-block
+                          label.select-name CURRENCY
+                          select.select-panel
+                            option QNT
+                            option QNT
+                        div.select-block
+                          label.select-name ASSET
+                          select.select-panel
+                            option Select
+                            option Select
+                        div.select-block
+                          label.select-name START DATE
+                          select.select-panel
+                            option 09/17/2018
+                            option 09/17/2018
+                        div.select-block
+                          label.select-name END DATE
+                          select.select-panel
+                            option 10/25/2018
+                            option 10/25/2018
+                        div.select-block
+                          label.select-name TIME FRAME
+                          select.select-panel
+                            option 1 hour
+                            option 2 hour
+
+
+                    div.content-block__body
+                      div.code
+                        code 123
+
+
+
+
+                  div.content-block.content-block--no-shadow
+                    div.buttons-block
+                      div.upload
+                        a.button.button--trans-blue.noborder#addSertificate(href='javascript:;') + Upload New File
+                          input(type='file', name='file_source', size='40', onchange='$("#upload-file-info").html($(this).val());')
+                        //div.upload-info-wrapper
+                          div.upload-info
+                            div#upload-file-info.label.label-info IMG656566664_8310.jpg
+                            div#upload-file-info-size.label.label-info-size 3.2 Mb
+                          span.icon-close
+
+                      button.button.button--blue.inactive Save Changes
+
+
+
+                  div.content-block.tab-table-block
+                    ul#investTable.nav.nav-tabs(role='tablist')
+                      li.nav-item
+                        a#results-tab.nav-link.active(data-toggle='tab', href='#results', role='tab', aria-controls='results', aria-selected='true') Results
+                      li.nav-item
+                        a#logs-tab.nav-link(data-toggle='tab', href='#logs', role='tab', aria-controls='logs', aria-selected='true') Logs
+                      li.nav-item
+                        a#history-tab.nav-link(data-toggle='tab', href='#history', role='tab', aria-controls='history', aria-selected='false') History
+
+                    #investTableContent.tab-content
+                      #results.tab-pane.show.active(role='tabpanel', aria-labelledby='results-tab')
+                        div
+                          div.content-block__head
+                            div.zoom
+                              label.zoom-title zoom
+                              div.zoom-panel
+                                span.zoom-btn 1m
+                                span.zoom-btn.active 3m
+                                span.zoom-btn 6m
+                                span.zoom-btn YTD
+                                span.zoom-btn.inactive 1y
+                                span.zoom-btn All
+
+                            div.date
+                              div.date-from
+                                label.date-title from
+                                input.date-field(value='Sep 27, 2017')
+                              div.date-to
+                                label.date-title to
+                                input.date-field(value='Dec 27, 2017')
+
+                          div.content-block__body
+                            div.lines ГРАФИК
+
+
+                      #logs.tab-pane.fade(role='tabpanel', aria-labelledby='logs-tab')
+                        .tab-table
+                          table
+                            thead
+                              th -
+                              th -
+                              th -
+                              th -
+                              th -
+                              th -
+                              th -
+                            tbody
+                              tr
+                                td(colspan="7" style="text-align: center")
+                                  div.content-info
+                                    p No data
+
+                      #history.tab-pane.fade(role='tabpanel', aria-labelledby='history-tab')
+                        .tab-table
+                          table
+                            thead
+                              th OPEN ORDER (UTC)
+                              th CLOSED ORDER (UTC)
+                              th EXPOSURE
+                              th ENTRY BALANCE
+                              th EXIT BALANCE
+                              th P&L
+                              th PROFIT, %
+                            tbody
+                              tr
+                                td January 11, 2017
+                                td January 11, 2017
+                                td 8 hours
+                                td 1024.7
+                                td 893.002
+                                td 131.7
+                                td - 12.85
+                              tr
+                                td January 12, 2017
+                                td January 18, 2017
+                                td 6 days
+                                td 888.108
+                                td 954.522
+                                td 66.41
+                                td 7.48
+                              tr
+                                td January 18, 2017
+                                td January 19, 2017
+                                td 4 hours
+                                td 942.191
+                                td 941.177
+                                td 1.01
+                                td - 0.11
+
+
+                div.content-sidebar
+                  div.content-title Backtest Settings
+                  div.content-block
+                    div.content-block__head.content-block__head--thin
+                      label ALGORITHM SETTINGS
+                    div.content-block__body
+                      div.info-block
+                        p short = 10
+                        p long = 21
+                        p signal = 9
+                      div.info-block
+                        p [thresholds]
+                        p down = -0.025
+                        p up = 0.025
+                        p persistence = 1
+
+                    div.content-block__head.content-block__head--thin
+                      label PAPER TRADER SETTINGS
+                    div.content-block__body
+                      div.info-block
+                        p feeMaker = 0.25
+                        p feeTaker = 0.25
+                        p feeUsing = 'maker'
+                        p slippage = 0.05
+                      div.info-block
+                        p [simulationBalance]
+                        p asset = 1
+                        p currency = 100
+
+
+                  div.content-block.content-block--no-shadow
+                    div.buttons-block
+                      button.button.button--blue.inactive New Backtest
+                      div.backtest-info IN THE BACKTESTING PROGRESS
+                      button.button.button--red(data-toggle="modal" data-target="#deleteBacktestModal") Delete This Backtest
+
+
+
+            #started.tab-pane.fade(role='tabpanel', aria-labelledby='started-tab')
+              p No data
+
+
+  block footer
+
+
+  block modal
+    include includes/modals
+
+
+append scripts
+
+
+

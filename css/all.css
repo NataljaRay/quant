@@ -960,3 +960,14 @@ body {
   .main-layout .platform .tab-table .content-info p {
     padding-top: 33px;
     padding-bottom: 28px; }
+  .main-layout .platform .tab-table-block .content-block__head {
+    height: 45px !important;
+    border-top: 1px solid #dadadb;
+    border-bottom: none !important; }
+  .main-layout .platform .tab-table-block .content-block__body {
+    height: 334px !important;
+    padding: 0 !important; }
+  .main-layout .platform .tab-table-block .zoom-btn {
+    background: rgba(138, 106, 228, 0.4); }
+    .main-layout .platform .tab-table-block .zoom-btn.active {
+      background: #8A6AE4; }
